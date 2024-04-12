@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(29, 31, 33);
+    color: gray;
+}
+.table{
+    background-color:rgb(29, 31, 33);
+    border:2px solid rgb(0, 100, 0);
+}
+dd,dt,.full {
+    border-color: gray;
+}
+dd:hover{
+    color: yellow;
+}
+dt{
+    color: rgb(156, 220, 254);
+}
+.table h2 {
+    color: #ddd;
+}
+.table h2 img {
+    filter: invert(0.7);
+}
+a{
+    color: darkcyan;
+}

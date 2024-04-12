@@ -1,0 +1,50 @@
+@import url(./public/fontes/css-import/Roboto-Slab.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div{
+    margin: 0 auto;
+    width: max-content;
+}
+
+div > span {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+div.logo{
+    border: 3px solid blue;
+    border-radius: 8px;
+    width: 300px;
+    height: 180px;
+    margin: auto;
+    margin: 20px auto;
+    box-shadow: 3px 3px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    position:relative;
+    text-align: center;
+}
+
+div.logo:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+footer{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Roboto Slab', Arial, sans-serif;
+}
+
+section{
+    text-align: center;
+}

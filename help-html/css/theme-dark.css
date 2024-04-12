@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(29, 31, 33);
+    color:gray;
+}
+
+.table {
+    border: 2px solid rgb(17, 17, 148);
+    background-color: rgba(29, 31, 33, 0.671);
+}
+
+.table h2 {
+    color: #ddd;
+}
+.table h2 img {
+    filter: invert(0.7);
+}
+
+blue {color:blue;}
+red {color:rgb(206, 145, 120);}
+green {color:green}
+
+a:visited,a:link {
+    color:darkcyan;
+}
+a:hover{
+    color:red;
+}
+td:hover{
+    color:yellow;
+}
+table {
+    /* background-color:rgb(50, 51, 54); */
+}
+td.titulo, tr.subtitulo,th.titulo,td, th{
+    border-color: gray;
+}
+td blue{
+    color:rgb(156, 220, 254);
+}
+.tag,.value{
+    color:rgb(156, 220, 254);
+}
+.atribute{
+    color:rgb(206, 145, 120);
+}
+.coment{
+    color:green;
+}

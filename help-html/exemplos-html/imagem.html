@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+    <title>Imagens</title>
+    <link rel="stylesheet" href="../../public/css/main-exemplos.css">
+    <style>
+        div.exemplo{
+            text-align: center;
+            width: 850px;
+        }
+        .mt15px,td{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagens</h1>    
+    <div class="exemplo">
+        <img src="../../public/midia/imagem1.jpg" alt="Linda paisagem" title="Linda paisagem">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="code">
+                    &lt;
+                    <span class="text"><span class="tag">img</span> 
+                        <span class="atribute">src</span>=<span class="atribute-text">"../public/midia/imagem1.jpg"</span>
+                        <span class="atribute">alt</span>=<span class="atribute-text">"Linda paisagem"</span>
+                        <span class="atribute">title</span>=<span class="atribute-text">"Linda paisagem"</span>
+                    </span> &gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">&lt;!-- A tag &lt;img&gt; adiciona uma imagem há pagina--&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">&lt;!-- O atributo src="" determina o caminho para o arquivo da imagem --&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">4</td>
+                <td class="coment">&lt;!-- O atributo alt="" atribui um texto alternativo caso haja um erro no carregamento da imagem --&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">5</td>
+                <td class="coment">&lt;!-- O atributo title="" faz com que ao cursor do mouse ser posto na imagem apareça algum texto --&gt;</td>
+            </tr>
+        </table>
+    </div>   
+    <div class="exemplo">
+        <img src="../../public/midia/imagem1.jpg" alt="Linda paisagem" width="350px" height="200px" >
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="code">
+                    &lt;
+                    <span class="text"><span class="tag">img</span> 
+                        <span class="atribute">src</span>=<span class="atribute-text">"../public/midia/imagem1.jpg"</span>
+                        <span class="atribute">width</span>=<span class="atribute-text">"350px"</span>
+                        <span class="atribute">height</span>=<span class="atribute-text">"200px"</span>
+                    </span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">&lt;!-- O atributo width="" permite alterar a largura da imagem. --&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">&lt;!-- O atributo height="" permite alterar a altura da imagem. --&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">4</td>
+                <td class="coment">&lt;!-- Tanto a altura quanto a largura das imagens podem ser alteradas usando CSS. --&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">5</td>
+                <td class="coment">&lt;!-- Caso apenas um dos valores seja especificado o outro valor será proporcional ao tamanho da imagem. --&gt;</td>
+            </tr>
+        </table>
+    </div>
+    <footer>&copy;Arthur Lobo</footer>
+</body>
+</html>

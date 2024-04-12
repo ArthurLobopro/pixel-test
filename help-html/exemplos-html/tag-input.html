@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Arthur Lobo">
+    <link rel="stylesheet" href="../../public/css/main-exemplos.css">
+    <title>Tag Input</title>
+    <style>
+        div.exemplo{
+            text-align: center;
+            width: 1000px;
+        }
+        td{
+            text-align: left;
+        }
+        .grid-coll2{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .ajuste{
+            margin-right:-18.5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tag <span class="tag">&lt;input&gt;</span></h1>
+    <div class="exemplo">
+        Nome:<input type="text" autofocus><br>
+        Senha:<input type="password"><br>
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="code"><span class="text">Nome:</span>&lt;<span class="tag">input</span>
+                <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"text"</span>
+                <span class="atribute">autofocus</span>&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="code"><span class="text">Senha:</span>&lt;<span class="tag">input</span> <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"password"</span>&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">&lt;!-- A tag input define que será efetuada a entrada de algum dado --&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">4</td>
+                <td class="coment">&lt;!-- O atributo autofocus faz com que a entrada de dados já seja selecionada --&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">5</td>
+                <td class="coment">&lt;!--</td>
+            </tr>
+            <tr>
+                <td class="number">6</td>
+                <td class="coment tab">O atributo type define o tipo de dado a ser recolhido </td>
+            </tr>
+            <tr>
+                <td class="number">7</td>
+                <td class="coment tab">Quando especificado como "text" recolhe texto </td>
+            </tr>
+            <tr>
+                <td class="number">8</td>
+                <td class="coment tab">Quando especificado como "password" recolhe texto e o oculta o mesmo </td>
+            </tr>
+            <tr>
+                <td class="number">9</td>
+                <td class="coment">--&gt;</td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        <input type="text" value="Este campo está desativado" disabled><br><br>
+        <input type="text" value="Este campo está ativado">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"text"</span>
+                    <span class="atribute">value</span><span class="text">=</span><span class="atribute-text">"Este campo está desativado"</span>
+                    <span class="atribute">disabled</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"text"</span>
+                    <span class="atribute">value</span><span class="text">=</span><span class="atribute-text">"Este campo está ativado"</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">&lt;!-- O atributo disabled indica que um campo está desativado --&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">4</td>
+                <td class="coment">&lt;!-- o atributo value="" atribui um valor para o input, ele é compatível com quase todos os types --&gt;</td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        <input type="text" value="Este campo é para leitura" readonly><br><br>
+        <input type="text" value="Este campo é editável">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"text"</span>
+                    <span class="atribute">value</span><span class="text">=</span><span class="atribute-text">"Este campo é somente para leitura"</span>
+                    <span class="atribute">readonly</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="code">&lt;<span class="tag">input</span>
+                    <span class="text"><span class="atribute">type</span>=<span class="atribute-text">"text"</span>
+                    <span class="atribute">value</span>=<span class="atribute-text">"Este campo é editável"</span></span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">&lt;!-- O atributo readonly indica que um campo é somente para leitura --&gt;</td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        <input type="text" size="10" value="Tamanho 10">
+        <input type="text" size="5" value="Size5">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="code">&lt;<span class="tag">input</span>
+                    <span class="text"><span class="atribute">type</span>=<span class="atribute-text">"text"</span>
+                    <span class="atribute">value</span>=<span class="atribute-text">"Tamanho 10"</span>
+                    <span class="atribute">size</span>=<span class="atribute-text">"10"</span></span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="code">&lt;<span class="tag">input</span>
+                    <span class="text"><span class="atribute">type</span>=<span class="atribute-text">"text"</span>
+                    <span class="atribute">value</span>=<span class="atribute-text">"size5"</span>
+                    <span class="atribute">size</span>=<span class="atribute-text">"5"</span></span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">&lt;!-- O atributo size define a largura do campo input por caracteres --&gt;</td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        <input type="text" size="10" value="Máximo 10." maxlength="10">
+        <input type="text" size="4" value="Max4" maxlength="4">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="code">&lt;<span class="tag">input</span>
+                    <span class="text"><span class="atribute">type</span>=<span class="atribute-text">"text"</span>
+                    <span class="atribute">value</span>=<span class="atribute-text">"Máximo 10."</span>
+                    <span class="atribute">size</span>=<span class="atribute-text">"10"</span>
+                    <span class="atribute">maxlength</span>=<span class="atribute-text">"10"</span></span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="code">&lt;<span class="tag">input</span>
+                    <span class="text"><span class="atribute">type</span>=<span class="atribute-text">"text"</span>
+                    <span class="atribute">value</span>=<span class="atribute-text">"Max4"</span>
+                    <span class="atribute">size</span>=<span class="atribute-text">"4"</span>
+                    <span class="atribute">maxlength</span>=<span class="atribute-text">"4"</span></span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">&lt;!-- O atributo maxlength define o máximo de caracteres dentro de um campo --&gt;</td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        <object data="./exemplos-input/submit.html" type="text/html" height="120px"></object>
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="code">&lt;<span class="tag">form</span>&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="text tab">Nome: 
+                    <span class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"text"</span>&gt; &lt;<span class="tag">br</span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="code tab">
+                    &lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"submit"</span> <span class="atribute">value</span><span class="text">=</span><span class="atribute-text">"Enviar"</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">4</td>
+                <td class="code tab">
+                    &lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"reset"</span> <span class="atribute">value</span><span class="text">=</span><span class="atribute-text">"Apagar"</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">5</td>
+                <td class="code">&lt;/<span class="tag">form</span>&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">6</td>
+                <td class="coment">&lt;!-- </td>
+            </tr>
+            <tr>
+                <td class="number">7</td>
+                <td class="coment">
+                    Quando type é definido como "submit" ele cria um botão para enviar valores do formulário em que está. 
+                </td>
+            </tr>
+            <tr>
+                <td class="number">8</td>
+                <td class="coment">
+                    Quando type é definido como "reset" ele redefine todos os valores do formulário em que está. --&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        <object data="exemplos-input/pattern.html" type="text/html" height="45px" width="310px"></object>
+        <div class="mt15px">Código:</div>
+        <div class="mt15px">HTML:</div> 
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="code">&lt;<span class="tag">form</span>&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="text tab">
+                    CPF: <span class="code">&lt;<span class="tag">input</span></span>
+                    <span class="atribute">type</span>=<span class="atribute-text">text</span>
+                    <span class="atribute">placeholder</span>=<span class="atribute-text">"000.000.000-00"</span>
+                    <span class="atribute">pattern</span>=<span class="atribute-text">"[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}"</span>
+                    <span class="code">&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="code tab">
+                    &lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"submit"</span> <span class="atribute">value</span><span class="text">=</span><span class="atribute-text">"Enviar"</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">4</td>
+                <td class="code">&lt;/<span class="tag">form</span>&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">5</td>
+                <td class="coment">&lt;!-- O atributo placeholder mostra uma espécie de exemplo de como o dado deve ser inserido --&gt;</td>
+            </tr>
+            <tr>
+                <td class="number">6</td>
+                <td class="coment">&lt;!-- O atributo pattern define um padrão de formatação que deve ser seguido --&gt;</td>
+            </tr>
+        </table>
+        <div class="mt15px">CSS:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number ajuste">1</td>
+                <td class="css-seletor">input:invalid<span class="text">{</span></td>
+            </tr>
+            <tr>
+                <td class="number ajuste">2</td>
+                <td class="text tab"><span class="atribute">border-width</span>: <span class="number-css">2px</span>;</td>
+            </tr>
+            <tr>
+                <td class="number ajuste">3</td>
+                <td class="text tab">
+                    <span class="atribute">outline</span>: <span class="number-css">1px</span>
+                    <span class="atribute-text">solid red</span>;
+                </td>
+            </tr>
+            <tr>
+                <td class="number ajuste">4</td>
+                <td class="text tab"><span class="atribute">outline-offset</span>: <span class="number-css">-3px</span>;</td>
+            </tr>
+            <tr>
+                <td class="number ajuste">5</td>
+                <td class="text">}</td>
+            </tr>
+        </table> 
+    </div>
+    <div class="exemplo">
+        Informe seu navegador: <input type="text" list="navegadores">
+        <datalist id="navegadores">
+            <option value="Internet Explorer">
+            <option value="Opera">
+            <option value="FireFox">
+            <option value="Chrome">
+        </datalist>
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="text">Informe seu navegador: <span class="code">&lt;<span class="tag">input</span></span>
+                    <span class="text"><span class="atribute">type</span>=<span class="atribute-text">"text"</span>
+                    <span class="atribute">list</span>=<span class="atribute-text">"navegadores"</span></span><span class="code">&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="code">
+                    &lt;<span class="tag">datalist</span> <span class="atribute">id</span><span class="text">=</span><span class="atribute-text">"navegadores"</span>&gt; 
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="code tab">
+                    &lt;<span class="tag">option</span>
+                    <span class="atribute">value</span><span class="text">=</span><span class="atribute-text">"Internet Explorer"</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">4</td>
+                <td class="code tab">
+                    &lt;<span class="tag">option</span>
+                    <span class="atribute">value</span><span class="text">=</span><span class="atribute-text">"Opera"</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">5</td>
+                <td class="code tab">
+                    &lt;<span class="tag">option</span>
+                    <span class="atribute">value</span><span class="text">=</span><span class="atribute-text">"FireFox"</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">6</td>
+                <td class="code tab">
+                    &lt;<span class="tag">option</span>
+                    <span class="atribute">value</span><span class="text">=</span><span class="atribute-text">"Chrome"</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">7</td>
+                <td class="code">
+                    &lt;/<span class="tag">datalist</span>&gt; 
+                </td>
+            </tr>
+            <tr>
+                <td class="number">8</td>
+                <td class="coment">
+                    &lt;!-- A tag &lt;datalist&gt; cria uma lista de valores que podem ser usada em tags input --&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">9</td>
+                <td class="coment">
+                    &lt;!-- Para usar uma &lt;datalist&gt; em um input basta atribuir um id para a mesma e atribuí-lo ao atributo list="" dentro do input --&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Nome: <input type="text" autocomplete="on"><br><br>
+        Nome: <input type="text" autocomplete="off">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="text">
+                    Nome: <span class="code">&lt; <span class="tag">input</span></span>
+                    <span class="atribute">type</span>=<span class="atribute-text">"text"</span>
+                    <span class="atribute">autocomplete</span>=<span class="atribute-text">"on"</span><span class="code">&gt;
+                    &lt;<span class="tag">br</span>&gt;&lt;<span class="tag">br</span>&gt;
+                    </span> 
+                    
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="text">
+                    Nome: <span class="code">&lt; <span class="tag">input</span></span>
+                    <span class="atribute">type</span>=<span class="atribute-text">"text"</span>
+                    <span class="atribute">autocomplete</span>=<span class="atribute-text">"off"</span><span class="code">&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">&lt;!-- O atributo autocomplete é usado para ligar ou desligar o autocomplete em formulários ('on','off') --&gt;</td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Informe um número entre 0 e 10: <input type="number" min="0" max="10">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="text">Informe um número entre 0 e 10:
+                    <span class="code">&lt;<span class="text"><span class="tag">input</span>
+                        <span class="atribute">type</span>=<span class="atribute-text">"number"</span>
+                        <span class="atribute">min</span>=<span class="atribute-text">"0"</span>
+                        <span class="atribute">max</span>=<span class="atribute-text">"10"</span></span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">
+                    &lt;!-- type "number" recolhe um número
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">
+                    Os atributos min e max definem os valores mínimo e máximo respectivamente --&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Informe um número par entre 0 e 10: <input type="number" value="0" min="0" max="10" step="2">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="text">Informe um número par entre 0 e 10:
+                    <span class="code">&lt;<span class="text"><span class="tag">input</span>
+                        <span class="atribute">type</span>=<span class="atribute-text">"number"</span>
+                        <span class="atribute">value</span>=<span class="atribute-text">"0"</span>
+                        <span class="atribute">min</span>=<span class="atribute-text">"0"</span>
+                        <span class="atribute">max</span>=<span class="atribute-text">"10"</span>
+                        <span class="atribute">step</span>=<span class="atribute-text">"2"</span></span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">
+                    &lt;!-- o atributo step define um intervalo entre os valores permitidos --&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        <div class="grid-coll2">
+            <div class="grid-coll2">
+                <label><input type="radio" name="opcoes" value="css">CSS</label>
+                <label><input type="radio" name="opcoes" value="html">HTML</label>
+            </div>
+            <div class="grid-coll2">
+                <label><input type="checkbox" name="tech" value="html"> HTML</label>
+                <label><input type="checkbox" name="tech" value="css"> CSS</label>
+            </div>
+        </div>
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="code">&lt;<span class="text"><span class="tag">input</span>
+                    <span class="atribute">type</span>=<span class="atribute-text">"radio"</span>  
+                    <span class="atribute">name</span>=<span class="atribute-text">"opcoes"</span>
+                    <span class="atribute">value</span>=<span class="atribute-text">"css"</span></span>&gt;
+                    <span class="text">CSS</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="code">&lt;<span class="text"><span class="tag">input</span>
+                    <span class="atribute">type</span>=<span class="atribute-text">"radio"</span>  
+                    <span class="atribute">name</span>=<span class="atribute-text">"opcoes"</span>
+                    <span class="atribute">value</span>=<span class="atribute-text">"html"</span></span>&gt;
+                    <span class="text">HTML</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="code">&lt;<span class="text"><span class="tag">input</span>
+                    <span class="atribute">type</span>=<span class="atribute-text">"checkbox"</span>  
+                    <span class="atribute">name</span>=<span class="atribute-text">"tech"</span>
+                    <span class="atribute">value</span>=<span class="atribute-text">"css"</span></span>&gt;
+                    <span class="text">CSS</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">4</td>
+                <td class="code">&lt;<span class="text"><span class="tag">input</span>
+                    <span class="atribute">type</span>=<span class="atribute-text">"checkbox"</span>  
+                    <span class="atribute">name</span>=<span class="atribute-text">"tech"</span>
+                    <span class="atribute">value</span>=<span class="atribute-text">"html"</span></span>&gt;
+                    <span class="text">HTML</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">5</td>
+                <td class="coment">&lt;!--</td>
+            </tr>
+            <tr>
+                <td class="number">6</td>
+                <td class="coment">Quando type é especificado como "radio" ele só permite que um elemento com o mesmo name seja marcado</td>
+            </tr>
+            <tr>
+                <td class="number">7</td>
+                <td class="coment">Quando  é especificado como "checkbox" ele só permite que vários elementos com o mesmo name sejam marcados</td>
+            </tr>
+            <tr>
+                <td class="number">8</td>
+                <td class="coment">O atributo name é usado para dar "nomes" as tags, diferente dos ids, várias tags podem ter o mesmo nome</td>
+            </tr>
+            <tr>
+                <td class="number">9</td>
+                <td class="coment">--&gt;</td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        <input type="button" onclick="alert('Olá mundo!')" value="Clique aqui">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="code">&lt;<span class="text"><span class="tag">input</span>
+                    <span class="atribute">type</span>=<span class="atribute-text">"button"</span>  
+                    <span class="atribute">onclick</span>=<span class="atribute-text">"<span class="function-js">alert</span>('Olá mundo')"</span>
+                    <span class="atribute">value</span>=<span class="atribute-text">"Clique aqui"</span></span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">&lt;!-- type="button" se comporta como um botão, que pode chamar funções em js entre outros --&gt;</td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Escolha uma cor: <input type="color">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="text">Escolha uma cor:
+                    <span class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"color"</span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">
+                    &lt;!-- Quando type é definido como "color" ele recolhe uma cor --&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Arquivo para upload:<br>
+        <input type="file">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="code">
+                    <span class="text">Digite o que você deseja pesquisar:</span>&lt;<span class="tag">br</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="code">
+                    &lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"file"</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">
+                    &lt;!-- Quando type é definido como "file" ele recolhe um arquivo para upload --&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Arquivos para upload:<br>
+        <input type="file" multiple>
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="code">
+                    <span class="text">Digite o que você deseja pesquisar:</span>&lt;<span class="tag">br</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="code">
+                    &lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"file"</span> <span class="atribute">multiple</span>&gt;
+                </td>
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td class="coment">
+                    &lt;!-- Quando o atributo multiple é declarado em um input type="upload" ele adquire a suporte para multiplos arquivos --&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Escolha uma data: <input type="date">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="text">Escolha uma data:
+                    <span class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"date"</span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">
+                    &lt;!-- Quando type é definido como "date" ele recolhe uma data --&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Escolha um mês: <input type="month">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="text">Escolha um mês:
+                    <span class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"month"</span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">
+                    &lt;!-- Quando type é definido como "month" ele recolhe um mês (não suportado em alguns navegadores)--&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Escolha uma semana: <input type="week">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="text">Escolha uma semana:
+                    <span class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"week"</span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">
+                    &lt;!-- Quando type é definido como "week" ele recolhe uma semana (não suportado em alguns navegadores)--&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Informe um horário: <input type="time">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="text">Informe um horário:
+                    <span class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"time"</span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">
+                    &lt;!-- Quando type é definido como "time" ele recolhe um horário (não suportado em alguns navegadores)--&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Informe data e hora atuais: <input type="datetime-local">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="text">Informe um horário:
+                    <span class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"datetime-local"</span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">
+                    &lt;!-- Quando type é definido como "datetime-local" ele recolhe data e hora atuais (não suportado em alguns navegadores)--&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Digite seu email:<input type="email">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="text">Digite seu email:
+                    <span class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"email"</span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">
+                    &lt;!-- Quando type é definido como "email" ele cria um campo para digitar um email--&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Ajuste o volume:(exemplo)<input type="range">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="text">Ajuste o volume:(exemplo)
+                    <span class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"email"</span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">
+                    &lt;!-- Quando type é definido como "range" ele recolhe uma barra de progresso que pode ser usada para ajustar volume,brilho, etc.--&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Digite o que você deseja pesquisar: <input type="search">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="text">Digite o que você deseja pesquisar:
+                    <span class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"search"</span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">
+                    &lt;!-- Quando type é definido como "search" ele cria uma barra de pesquisa, pode ser iconpatível com alguns navegadores --&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="exemplo">
+        Informe a url: <input type="url">
+        <div class="mt15px">Código:</div>
+        <table class="exemplo">
+            <tr>
+                <td class="number">1</td>
+                <td class="text">Informe o link:
+                    <span class="code">&lt;<span class="tag">input</span>
+                    <span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"url"</span>&gt;</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td class="coment">
+                    &lt;!-- Quando type é definido como "url" ele recolhe uma url, pode ser incompatível em alguns navegadores --&gt;
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>

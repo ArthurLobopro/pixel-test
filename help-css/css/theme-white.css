@@ -1,0 +1,16 @@
+body{
+    background-color: lightgrey;
+}
+.table{
+    background-color:white;
+    border:2px solid green;
+}
+dd,dt,.full {
+    border-color: black;
+}
+dt{
+    color: brown;
+}
+a{
+    color: blue;
+}

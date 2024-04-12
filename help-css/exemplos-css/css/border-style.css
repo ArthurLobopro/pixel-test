@@ -1,0 +1,217 @@
+:root {
+  --tab: 35px
+;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  min-width: 955px;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  background-color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  max-height: 100%;
+  overflow: auto;
+}
+
+ul:first-child {
+  max-height: 100%;
+}
+
+ul > li:first-child {
+  border-top: 0;
+}
+
+ul li {
+  list-style: none;
+  height: 40px;
+  border: solid black;
+  border-width: 1px 1px 0px 0px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2px 0 15px;
+  background-color: white;
+}
+
+ul li:last-of-type {
+  border-bottom: 1px solid black;
+}
+
+ul li img {
+  margin-right: 10px;
+}
+
+ul > ul:last-child > li:last-child {
+  border-bottom: 1px solid black;
+}
+
+ul > ul > li:first-child {
+  border-top: 1px solid black;
+}
+
+ul > ul > li:last-child {
+  border-bottom: none;
+}
+
+ul > ul:last-of-type li:first-child {
+  border-top: none;
+}
+
+.mt5px {
+  margin-top: 5px;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  min-width: 785px;
+  margin: auto;
+  border: 1px solid black;
+  background-color: rgba(53, 94, 0, 0.315);
+}
+
+select {
+  margin-left: 3px;
+}
+
+input[type="text"] {
+  min-width: 50px;
+  width: 70px;
+  padding: 0 2px;
+  max-width: 105px;
+  margin-left: 3px;
+}
+
+div {
+  background-color: white;
+}
+
+#div-cobaia {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: cobaia;
+  border-width: 5px;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-style: solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content auto;
+      grid-template-columns: -webkit-max-content auto;
+      grid-template-columns: max-content auto;
+  -ms-grid-rows: auto max-content;
+      grid-template-rows: auto -webkit-max-content;
+      grid-template-rows: auto max-content;
+      grid-template-areas: 'options1 cobaia cobaia ' 'table cobaia cobaia';
+}
+
+.separado {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+li, #div-cobaia {
+  font-family: 'Roboto Slab';
+  font-size: 15px;
+}
+
+.table {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: table;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  border-top: 1px solid black;
+  max-width: 400px;
+}
+
+.table h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5px;
+}
+
+.table .tab {
+  padding: 0 !important;
+  white-space: pre;
+  -moz-tab-size: 3;
+    -o-tab-size: 3;
+       tab-size: 3;
+}
+
+#div.cobaia, .options1, div.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.rotated {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 955px) {
+  section {
+    margin: auto 0 auto 5px;
+  }
+}
+/*# sourceMappingURL=border-style.css.map */

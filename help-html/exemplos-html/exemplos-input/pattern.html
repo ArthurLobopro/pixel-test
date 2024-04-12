@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+    <style>
+        input:invalid{
+            border-width:2px;
+            outline: 1px solid red;
+            outline-offset: -3px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        CPF: <input type="text" id="cpf" placeholder="000.000.000-00" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}">
+        <input type="button" value="Enviar" onclick="sub()">
+    </form>
+    <script>
+        const in_cpf =  document.getElementById('cpf')
+        const range = (min,max,pass=1) => {
+            let array = []
+            for(i = min; i < max; i+= pass){ array.push(i) }
+            return array
+        }
+        const sub = () => {
+            if (in_cpf.value.length == 14) {
+                let cpf = String(in_cpf.value)
+                let ok = []
+                let j = 3
+                for(i of range(0,12,4)){
+                    ok.push(isNaN(Number(cpf.substring(i,j))) == false ? true : false)
+                    j+=4
+                }
+                ok.push((cpf[3] == '.' && cpf[7] == '.')? true : false)
+                ok.push(cpf[11] == '-' ? true : false)
+                ok.push(isNaN(Number(cpf.substring(12,13))) == false ? true : false)
+                return (ok.indexOf(false)== -1 ? alert('Este CPF está formatado corretamente') : alert('Este CPF não está formatado corretamente'))
+            }else{
+                alert('Este CPF não está formatado corretamente')
+            }
+        }
+        
+    </script>
+</body>
+</html>

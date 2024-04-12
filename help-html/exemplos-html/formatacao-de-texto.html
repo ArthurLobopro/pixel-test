@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Formatação de texto em HTML</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Exemplos simples de formatação de texto com tags HTML5">
+		<meta charset="utf-8" >
+		<link rel="stylesheet" href="../../public/css/main-exemplos.css">
+		<style>
+			div.exemplo{
+				width: 750px;
+			}
+			pre{
+				margin: 0;
+			}
+			:root{
+				--tab: 35px
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Formatação de Texto</h1>
+		<div class="exemplo">
+			Texto <strong>forte</strong>.
+			<div class="mt15px">Código:</div>
+			<table class="exemplo">
+				<tr>
+					<td class="number">1</td>
+					<td class="text">
+						Texto
+						<span class="code">&lt;<span class="tag">strong</span>&gt;</span>forte<span class="code">&lt;/<span class="tag">strong</span>&gt;</span>.
+					</td>
+				</tr>
+				<tr>
+					<td class="number">2</td>
+					<td class="coment">
+						&lt;!-- a tag &lt;strong&gt; indica um texto importante, um texto forte --&gt;
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="exemplo">
+			Texto <b>em negrito</b>.
+			<div class="mt15px">Código:</div>
+			<table class="exemplo">
+				<tr>
+					<td class="number">1</td>
+					<td class="text">
+						Texto
+						<span class="code">&lt;<span class="tag">b</span>&gt;</span>em negrito<span class="code">&lt;/<span class="tag">b</span>&gt;</span>.
+					</td>
+				</tr>
+				<tr>
+					<td class="number">2</td>
+					<td class="coment">
+						&lt;!-- a tag &lt;b&gt; apenas aplica o efeito negrito (não semântica) --&gt;
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="exemplo">
+			Texto <em>enfatizado</em>
+			<div class="mt15px">Código:</div>
+			<table class="exemplo">
+				<tr>
+					<td class="number">1</td>
+					<td class="text">
+						Texto
+						<span class="code">&lt;<span class="tag">em</span>&gt;</span>enfatizado<span class="code">&lt;/<span class="tag">em</span>&gt;</span>.
+					</td>
+				</tr>
+				<tr>
+					<td class="number">2</td>
+					<td class="coment">
+						&lt;!-- a tag &lt;em&gt; indica um texto importante, um texto enfatizado --&gt;
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="exemplo">
+			Texto <i>em itálico</i>.
+			<div class="mt15px">Código:</div>
+			<table class="exemplo">
+				<tr>
+					<td class="number">1</td>
+					<td class="text">
+						Texto
+						<span class="code">&lt;<span class="tag">i</span>&gt;</span>em itálico<span class="code">&lt;/<span class="tag">i</span>&gt;</span>.
+					</td>
+				</tr>
+				<tr>
+					<td class="number">2</td>
+					<td class="coment">
+						&lt;!-- a tag &lt;i&gt; apenas aplica o efeito itálico (não semântica) --&gt;
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="exemplo">
+			Texto <mark>marcado</mark>.
+			<div class="mt15px">Código:</div>
+			<table class="exemplo">
+				<tr>
+					<td class="number">1</td>
+					<td class="text">
+						Texto
+						<span class="code">&lt;<span class="tag">mark</span>&gt;</span>marcado<span class="code">&lt;/<span class="tag">mark</span>&gt;</span>.
+					</td>
+				</tr>
+				<tr>
+					<td class="number">2</td>
+					<td class="coment">
+						&lt;!-- a tag &lt;mark&gt; indica um texto marcado, destacado --&gt;
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="exemplo">
+			Texto <small>pequeno</small>.
+			<div class="mt15px">Código:</div>
+			<table class="exemplo">
+				<tr>
+					<td class="number">1</td>
+					<td class="text">
+						Texto
+						<span class="code">&lt;<span class="tag">small</span>&gt;</span>pequeno<span class="code">&lt;/<span class="tag">small</span>&gt;</span>.
+					</td>
+				</tr>
+				<tr>
+					<td class="number">2</td>
+					<td class="coment">
+						&lt;!-- a tag &lt;small&gt; indica um texto com fonte pequena --&gt;
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="exemplo">
+			Texto <sup>sobrescrito</sup>
+			<div class="mt15px">Código:</div>
+			<table class="exemplo">
+				<tr>
+					<td class="number">1</td>
+					<td class="text">
+						Texto
+						<span class="code">&lt;<span class="tag">sup</span>&gt;</span>sobrescrito<span class="code">&lt;/<span class="tag">sup</span>&gt;</span>.
+					</td>
+				</tr>
+				<tr>
+					<td class="number">2</td>
+					<td class="coment">
+						&lt;!-- a tag &lt;sup&gt; indica um texto sobrescrito --&gt;
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="exemplo">
+			Texto <sub>subscrito</sub>
+			<div class="mt15px">Código:</div>
+			<table class="exemplo">
+				<tr>
+					<td class="number">1</td>
+					<td class="text">
+						Texto
+						<span class="code">&lt;<span class="tag">sub</span>&gt;</span>subscrito<span class="code">&lt;/<span class="tag">sub</span>&gt;</span>.
+					</td>
+				</tr>
+				<tr>
+					<td class="number">2</td>
+					<td class="coment">
+						&lt;!-- a tag &lt;sub&gt; indica um texto subscrito --&gt;
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="exemplo">
+			Um trecho de código: <code>alert("Olá mundo!")</code>
+			<div class="mt15px">Código:</div>
+			<table class="exemplo">
+				<tr>
+					<td class="number">1</td>
+					<td class="text">
+						Um trecho de código:
+						<span class="code">&lt;<span class="tag">code</span>&gt;</span>alert("Olá mundo!")<span class="code">&lt;/<span class="tag">code</span>&gt;</span>.
+					</td>
+				</tr>
+				<tr>
+					<td class="number">2</td>
+					<td class="coment">
+						&lt;!-- a tag &lt;code&gt; indica um trecho de código inline, ela também aplica uma fonte monoespacaçada, o que é ideal para a leitura de códigos --&gt;
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="exemplo">
+<pre>
+let nome = prompt("Informe seu nome: ")
+let sexo = prompt("Informe seu sexo (F/M):").toUpperCase()
+alert( 
+	sexo == "M" ? `Bom dia Sr. ${nome}` : `Bom dia Sra. ${nome}` 
+)
+</pre>
+		<div class="mt15px">Código:</div>
+		<table class="exemplo">
+			<tr>
+				<td class="number">1</td>
+				<td class="code">&lt;<span class="tag">pre</span>&gt;</td>
+			</tr>
+			<tr>
+				<td class="number">2</td>
+				<td class="text">let nome = prompt("Informe seu nome: ")</td>
+			</tr>
+			<tr>
+				<td class="number">3</td>
+				<td class="text">let sexo = prompt("Informe seu sexo (F/M):").toUpperCase()</td>
+			</tr>
+			<tr>
+				<td class="number">4</td>
+				<td class="text">alert(</td>
+			</tr>
+			<tr>
+				<td class="number">5</td>
+				<td class="text tab">sexo == "M" ? `Bom dia Sr. ${nome}` : `Bom dia Sra. ${nome}`</td>
+			</tr>
+			<tr>
+				<td class="number">6</td>
+				<td class="text">)</td>
+			</tr>
+			<tr>
+				<td class="number">7</td>
+				<td class="code">&lt;/<span class="tag">pre</span>&gt;</td>
+			</tr>
+			<tr>
+				<td class="number">8</td>
+				<td class="coment">&lt;!-- A tag &lt;pre&gt; é usada para inserir textos pré formatados, ou seja ela respeita todos espaços quebras de linha inseridos dentro dela. --&gt;</td>
+			</tr>
+		</table>
+		</div>
+		<div class="exemplo">
+			Coloque o mouse <abbr title="Significado">aqui</abbr>.
+			<div class="mt15px">Código:</div>
+			<table class="exemplo">
+				<tr>
+					<td class="number">1</td>
+					<td class="text">
+						Coloque o mouse
+						<span class="code">&lt;<span class="tag">abbr</span>&gt;</span>aqui<span class="code">&lt;/<span class="tag">abbr</span>&gt;</span>.
+					</td>
+				</tr>
+				<tr>
+					<td class="number">2</td>
+					<td class="coment">
+						&lt;!--
+					</td>
+				</tr>
+				<tr>
+					<td class="number">3</td>
+					<td class="coment">
+						A tag &lt;abbr&gt; indica que o termo tem um significado disponibilizado
+					</td>
+				</tr>
+				<tr>
+					<td class="number">4</td>
+					<td class="coment">O atributo title é utilizado para atribuir o significado ao conteúdo da tag.</td>
+				</tr>
+				<tr>
+					<td class="number">5</td>
+					<td class="coment">--&gt;</td>
+				</tr>
+			</table>
+		</div>
+		<div class="exemplo">
+			<q>Nem tudo que reluz é ouro.</q>
+			<em>William Shakespeare</em>
+			<div class="mt15px">Código:</div>
+			<table class="exemplo">
+				<tr>
+					<td class="number">1</td>
+					<td class="text">
+						<span class="code">&lt;<span class="tag">q</span>&gt;</span>Nem tudo que reluz é ouro.<span class="code">&lt;/<span class="tag">q</span>&gt;</span>
+					</td>
+			</tr>
+			<tr>
+				<td class="number">2</td>
+				<td class="text">
+					<span class="code">&lt;<span class="tag">em</span>&gt;</span>William Shakespeare<span class="code">&lt;/<span class="tag">em</span>&gt;</span>.
+				</td>
+			</tr>
+			<tr>
+				<td class="number">3</td>
+				<td class="coment">
+					&lt;!-- A tag &lt;q&gt; é usada para indicar citações --&gt;
+				</td>
+			</tr>
+		</table>
+		</div>
+		<div class="exemplo">
+			Texto <del>excluído</del>
+			<div class="mt15px">Código:</div>
+			<table class="exemplo">
+				<tr>
+					<td class="number">1</td>
+					<td class="text">
+						Texto
+						<span class="code">&lt;<span class="tag">del</span>&gt;</span>excluído<span class="code">&lt;/<span class="tag">del</span>&gt;</span>.
+					</td>
+				</tr>
+				<tr>
+					<td class="number">2</td>
+					<td class="coment">
+						&lt;!-- a tag &lt;del&gt; indica um texto deletado --&gt;
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="exemplo">
+			Texto <ins>inserido</ins>.
+			<div class="mt15px">Código:</div>
+			<table class="exemplo">
+				<tr>
+					<td class="number">1</td>
+					<td class="text">
+						Texto
+						<span class="code">&lt;<span class="tag">ins</span>&gt;</span>inserido<span class="code">&lt;/<span class="tag">ins</span>&gt;</span>.
+					</td>
+				</tr>
+				<tr>
+					<td class="number">2</td>
+					<td class="coment">
+						&lt;!-- a tag &lt;ins&gt; indica um texto inserido --&gt;
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="exemplo">
+			Texto <u>sublinhado</u>.
+			<div class="mt15px">Código:</div>
+			<table class="exemplo">
+				<tr>
+					<td class="number">1</td>
+					<td class="text">
+						Texto
+						<span class="code">&lt;<span class="tag">u</span>&gt;</span>sublinhado<span class="code">&lt;/<span class="tag">u</span>&gt;</span>.
+					</td>
+				</tr>
+				<tr>
+					<td class="number">2</td>
+					<td class="coment">
+						&lt;!-- a tag &lt;u&gt; indica um texto sublinhado, (não semântico) --&gt;
+					</td>
+				</tr>
+			</table>
+		</div>
+		<footer>&copy;Arthur Lobo</footer>
+</html>

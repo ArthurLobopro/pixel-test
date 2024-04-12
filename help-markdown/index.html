@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda Markdown</title>
+    <link rel="shortcut icon" href="midia/mark-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../public/css/cabecalho-medidas.css">
+    <link rel="stylesheet" href="../public/css/cabecalho-white.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--Tema-->
+    <link rel="stylesheet" href="css/html-table-white.css" id="theme">
+    <script src="../public/js/main_index.js" type="module"></script>
+</head>
+<body>
+    <header>
+        
+        <div class="theme-button" style="visibility: hidden;">
+            <div class="circle ad-2s">
+                <img src="../public/midia/moon-icon.svg" alt="" width="16px" height="16px">
+            </div>
+        </div>
+        <div>
+            <a href="../index.html">
+                <img src="../public/midia/home_white.png" alt="Home" title="Ir para página principal" width="30px" height="30px" id="home">
+            </a>
+        </div>
+
+        <div id="menu">
+                <nav>
+                    <ul>
+                        <li data-target="formt" class="botao">Formatação</li>
+                        <li data-target="list" class="botao ">Listas</li>
+                        <li data-target="table" class="botao">Tabelas</li>
+                        <li data-target="title" class="botao">Títulos</li>
+                        <li data-target="link" class="botao">Links</li>
+                        <li data-target="code" class="botao">Código</li>
+                        <li data-target="quote" class="botao">Citação</li>
+                        <li data-target="image" class="botao">Imagem</li>
+                        <li data-target="hr" class="botao">Linhas</li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Formatação -->
+        <div class="table">
+            <h2 id="formt">
+                Formatação Simples
+                <img src="../public/midia/seta-baixo.png" height="9px">
+            </h2>
+            <div class="invisible" id="simple-formt">
+                <table>
+                    <tr>
+                        <th>Código</th>
+                        <th>Descrição</th>
+                        <th>Resultado</th>
+                    </tr>
+                    <tr>
+                        <td>**Negrito**</td>
+                        <td>Colocar um texto entre ** faz com que ele fique em negrito.</td>
+                        <td><strong>Negrito</strong></td>
+                    </tr>
+                    <tr>
+                        <td>__Negrito__</td>
+                        <td>Colocar um texto entre __ faz com que ele fique em negrito.</td>
+                        <td><strong>Negrito</strong></td>
+                    </tr>
+                    <tr>
+                        <td>*Itálico*</td>
+                        <td>Colocar o texto entre * faz com que ele fique em itálico.</td>
+                        <td><em>Itálico</em></td>
+                    </tr>
+                    <tr>
+                        <td>_Itálico_</td>
+                        <td>Colocar o texto entre _ faz com que ele fique em itálico.</td>
+                        <td><em>Itálico</em></td>
+                    </tr>
+                    <tr>
+                        <td>~~Riscado~~</td>
+                        <td>Colocar o texto entre ~~ faz com que ele seja riscado</td>
+                        <td><del>Riscado</del></td>
+                    </tr>
+                    <tr>
+                        <td>\* Itálico \*</td>
+                        <td>Para adicionar caracteres especiais da linguagem basta colocar uma \ antes</td>
+                        <td>*Itálico</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Listas -->
+        <div class="table">
+            <h2 id="list">
+                Listas
+                <img src="../public/midia/seta-baixo.png" height="9px">
+            </h2>
+            <div class="invisible" id="list-expand">
+                <table>
+                    <tr>
+                        <th>Código</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>* ou - Item</td>
+                        <td colspan="2">O texto colocado após * ou - se torna uma lista não enumerada.</td>
+                    </tr>
+                    <tr>
+                        <td>0. Item</td>
+                        <td>Ao colocar algum numero seguido de um . e um espaço, ele se torna uma lista enumerada</td>
+                    </tr> 
+                </table>
+                <table>
+                    <tr>
+                        <td  class="ta-left">
+                            Resultado: <br>
+                            <ul>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <ul>
+                                    <li>SubItem</li>
+                                    <li>SubItem</li>
+                                </ul>
+                            </ul>
+                        </td>
+                        <td class="ta-left">
+                            Resultado: <br>
+                            <ol>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <ol type="i">
+                                    <li>SubItem</li>
+                                    <li>SubItem</li>
+                                </ol>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">*Para adicionar uma sublista basta dar tres espaços antes de adicionar a lista*</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Tabelas -->
+        <div class="table">
+            <h2 id="table">
+                Tabelas
+                <img src="../public/midia/seta-baixo.png" height="9px">
+            </h2>
+            <div class="invisible" id="table-expand">
+                <table>
+                    <thead>
+                        <tr>
+                            <td colspan="2">Tabelas</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta-left pl5px">
+                                Para fazer tabelas em markdown basta fazer a primeira linha delimitando as colunas com |. <br>
+                                Depois é só replicar a divisão com --- | --- para indicar que a linha anterior é o cabeçalho. <br>
+                                Após isso é só continuar adicionando linhas e delimitando as colunas com | obedecendo a formatação original <br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-exemple">
+                    <div class="internal-table ta-center">
+                        Exemplo:
+                    </div>
+                    <div class="internal-table">
+                        Código: <br>
+                        Matéria | 1 Semestre | 2 Semestre <br>
+                        --- | --- | --- <br>
+                        Matemática | 8,7 | 9 <br>
+                        Física | 7 | 8,5
+                    </div>
+                    <div class="internal-table">
+                        Resultado: <br>
+                        <table class="exemplo">
+                            <thead>
+                                <tr>
+                                    <th>Matéria</th>
+                                    <th>1 Semestre</th>
+                                    <th>2 Semestre</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ta-left">Matemática</td>
+                                    <td>8,7</td>
+                                    <td class="ta-left">9</td>
+                                </tr>
+                                <tr>
+                                    <td class="ta-left">Física</td>
+                                    <td>7</td>
+                                    <td class="ta-left">8,5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td colspan="2">Alinhamento em Tabelas</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ta-left pl5px" colspan="2">
+                                Para fazer o alinhamento nas tabelas basta adicionar : na posição que o texto deve ficar na linha da formatação da tabela
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>:---:</td>
+                            <td>Alinha o texto ao centro.</td>
+                        </tr>
+                        <tr>
+                            <td>:---</td>
+                            <td>Alinha o texto à esquerda.</td>
+                        </tr>
+                        <tr>
+                            <td>---:</td>
+                            <td>Alinha o texto à direita.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-exemple">
+                    <div class="internal-table ta-center">
+                        Exemplo:
+                    </div>
+                    <div class="internal-table">
+                        Código: <br>
+                        Matéria | 1 Semestre | 2 Semestre <br>
+                        ---: | :---: | :--- <br>
+                        Matemática | 8,7 | 9 <br>
+                        Física | 7 | 8,5
+                    </div>
+                    <div class="internal-table">
+                        Resultado: <br>
+                        <table class="exemplo">
+                            <thead>
+                                <tr>
+                                    <th class="ta-right">Matéria</th>
+                                    <th class="ta-center">1 Semestre</th>
+                                    <th class="ta-left">2 Semestre</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ta-right">Matemática</td>
+                                    <td class="ta-center">8,7</td>
+                                    <td class="ta-left">9</td>
+                                </tr>
+                                <tr>
+                                    <td class="ta-right">Física</td>
+                                    <td class="ta-center">7</td>
+                                    <td class="ta-left">8,5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Titulos -->
+        <div class="table">
+            <h2 id="title">
+                Títulos
+                <img src="../public/midia/seta-baixo.png" height="9px">
+            </h2>
+            <div class="invisible" id="title-expand">
+                <table>
+                    <tr>
+                        <th>Código</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td># Título 1</td>
+                        <td>Adiciona um título de nível 1.</td>
+                    </tr>
+                    <tr>
+                        <td>## Título 2</td>
+                        <td>Adiciona um título de nível 2.</td>
+                    </tr>
+                    <tr>
+                        <td>### Título 3</td>
+                        <td>Adiciona um título de nível 3.</td>
+                    </tr>
+                    <tr>
+                        <td>#### Título 4</td>
+                        <td>Adiciona um título de nível 4.</td>
+                    </tr>
+                    <tr>
+                        <td>##### Título 5</td>
+                        <td>Adiciona um título de nível 5.</td>
+                    </tr>
+                    <tr>
+                        <td>###### Título 6</td>
+                        <td>Adiciona um título de nível 6.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Inserir Links -->
+        <div class="table">
+            <h2 id="link">
+                Inserir Links
+                <img src="../public/midia/seta-baixo.png" height="9px">
+            </h2>
+            <div class="invisible" id="link-expand">
+                <table>
+                    <tr>
+                        <th>Código</th>
+                        <th>Descrição</th>
+                        <th>Resultado</th>
+                    </tr>
+                    <tr>
+                        <td>[texto](link)</td>
+                        <td>Unsado [ ]( ) podemos inserir um link em um texto.</td>
+                        <td><a href="https://google.com">clique aqui</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="mm">&lt;link&gt;</span></td>
+                        <td>Adiciona um link sem texto.</td>
+                        <td><a href="https://google.com">https://google.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>https://google.com</td>
+                        <td>Em alguns casos você pode simplesmente por o link</td>
+                        <td><a href="https://google.com">https://google.com</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Inserir códigos -->
+        <div class="table">
+            <h2 id="code">
+                Inserir códigos
+                <img src="../public/midia/seta-baixo.png" height="9px">
+            </h2>
+            <div class="invisible" id="code-expand">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Código</th>
+                            <th>Descrição</th>
+                        </tr>
+                        <tr>
+                            <td>`print('Olá Mundo')`</td>
+                            <td colspan="2">Colocar o texto entre ` indica um código inline</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="one-line">Resultado: <code class="orange">print('Olá Mundo!')</code></td>
+                        </tr>
+                        <tr>
+                            <td>```Código```</td>
+                            <td colspan="2">Ao por um código entre ``` além dos efeitos de ` ele ainda obedece a identação.</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <table>
+                    <tr>
+                        <td class="ta-left">
+                            Código: <br>
+                            ```Python <br>
+                            num = int(input('Digite um número')) <br>
+                            if num%2==0: <br>
+                            <pre class="inherit">   print('{} é par.'.format(num)) <br></pre>
+                            else: <br>
+                            <pre class="inherit">   print('{} é ímpar.'.format(num)) <br></pre>
+                            ```
+                        </td>
+                        <td class="ta-left">
+                            Resultado:
+<pre>
+num = int(input(<span class="string">'Digite um número'</span>))
+if num%2==0:
+    print(<span class="string">'{} é par.'</span>.format(num))
+else:
+    print(<span class="string">'{} é ímpar.'</span>.format(num))
+</pre>
+                            *Python escrito junto dos ``` serve para indicar a linguagem.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Citações -->
+        <div class="table">
+            <h2 id="quote">
+                Inserir citações
+                <img src="../public/midia/seta-baixo.png" height="9px">
+            </h2>
+            <div class="invisible" id="quote-expand">
+                <table>
+                    <tr>
+                        <th>Código</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>> Texto</td>
+                        <td>Ao colocar um texto depois de > ele se torna uma citação</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="ta-left">
+                            Resultado: <br>
+                            <div class="bgc-black">
+                                <blockquote >
+                                    &quot;O Inferno está vazio e todos os demônios estão aqui.&quot; <br>
+                                    William Shakespeare.
+                                </blockquote>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Inserir Imagens -->
+        <div class="table">
+            <h2 id="image">
+                Inserir Imagens
+                <img src="../public/midia/seta-baixo.png" height="9px">
+            </h2>
+            <div class="invisible" id="image-expand">
+                <table>
+                    <tr>
+                        <th>Código</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>![txt alternativo](link)</td>
+                        <td>Você pode inserir imagens dessa forma ![Logo Markdown](midia/mark-logo.png)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            Resultado: <br><br>
+                            <img src="../public/midia/mark-logo.png" alt="Logo Markdown">
+                        </td>
+                    </tr>
+                </table>
+           </div>
+        </div>
+        <!-- Linhas horizontais -->
+        <div class="table">
+            <h2 id="hr">
+                Linhas Horizontais
+                <img src="../public/midia/seta-baixo.png" height="9px">
+            </h2>
+            <div class="invisible" id="hr-expand">
+                <table>
+                    <tr>
+                        <th>Código</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>*** ou ---</td>
+                        <td colspan="2">Criam Linhas Horizontais</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            Resultado: <hr>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

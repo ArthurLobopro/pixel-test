@@ -1,0 +1,126 @@
+@import url(../fontes/css-import/Roboto-Slab.css);
+@import url(../fontes/css-import/Inconsolata.css);
+
+//Variáveis
+:root{
+    --preto: rgb(30, 30, 30);
+    --cinza:#787878;
+    --verde: #6A9955;
+    --verde-claro: #B5CEA8;
+    --branco: #e5e5e5;
+    --azul: #569CD6;
+    --azul-claro: #9CDCFE;
+    --laranja: #CE9178;
+    --amarelo: #DCDCAA;
+    --tab: 20px;
+    --number-width: 35px;
+}
+
+
+$preto: var(--preto);
+$cinza: var(--cinza);
+$verde: var(--verde);
+$verde-claro: var(--verde-claro);
+$branco: var(--branco);
+$azul: var(--azul);
+$azul-claro: var(--azul-claro);
+$laranja: var(--laranja);
+$amarelo: var(--amarelo);
+$tab: var(--tab);
+$number-width: var(--number-width);
+
+
+body {
+    background-color: rgb(211, 211, 211);
+    font-family: "Times New Roman", serif;
+}
+h1,h2{
+    text-align: center;
+    margin:auto;
+}
+table.exemplo{
+    list-style: none;
+    width:100%;
+    font-size: 17px;
+    background-color: $preto;
+    color: aliceblue;
+    font-family:  Consolas, 'Inconsolata', monospace;
+    margin-top: 0;
+    padding-left: 5px;
+    border-collapse:collapse;
+    & tr{
+        display: grid;
+        grid-template-columns: $number-width auto;
+    }
+}
+
+div.exemplo{
+    padding: 10px;
+    width: fit-content;
+    text-align: left;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px auto 10px;
+    background-color: white;
+}
+.mga{
+    margin: auto;
+    width: max-content;
+}
+.code{
+    color: $cinza;
+}
+.code,.tag,.comet,.text,.css-seletor{
+    font-family:  Consolas, 'Inconsolata', monospace;
+}
+.mt15px{
+    margin-top: 15px;
+    text-align: left;
+}
+.tag{
+    color: rgb(37, 104, 202);
+    color: $azul;
+}
+.text{
+    color: rgb(229, 229, 229);
+}
+td.text,td.code,td.atribute{
+    padding-left: 5px;
+}
+.atribute{
+    color: $azul-claro;
+}
+.atribute-text{
+    color: $laranja;
+}
+.coment{
+    color: $verde;
+    padding-left: 5px;
+}
+.css-seletor{
+    color: $amarelo;
+    padding-left: 5px;
+}
+.number{
+    text-align: right;
+    color: $cinza;
+    padding-right: 5px;
+    width: $number-width;
+    box-sizing: border-box;
+    margin-right: 5px;
+    user-select: none;
+    border-right: 1pt solid $cinza;
+}
+.number-css{
+    color:$verde-claro;
+}
+.tab{
+    padding-left: $tab !important;
+}
+footer{
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    font-size: 18px;
+}

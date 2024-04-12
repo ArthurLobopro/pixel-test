@@ -1,0 +1,175 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Listas HTML</title>
+        <link rel="stylesheet" href="../../public/css/main-exemplos.css">
+        <style>
+            div.exemplo{
+                width:min-content;
+                min-width: 638px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Listas HTML</h1>
+        
+        <div class="exemplo">
+            <ul>
+                <li>Tópico 1</li>
+                <li>Tópico 2</li>
+                <li>Tópico 3</li>
+            </ul>
+            <ol>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>    
+                </ol>
+                <div class="mt15px">Código:</div>
+                <table class="exemplo">
+                    <tr>
+                        <td class="number">1</td>
+                        <td class="code">&lt;<span class="tag">ul</span>&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="number">2</td>
+                        <td class="code tab">&lt;<span class="tag">li</span>&gt;<span class="text">Tópico 1</span>&lt;/<span class="tag">li</span>&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="number">3</td>
+                        <td class="code tab">&lt;<span class="tag">li</span>&gt;<span class="text">Tópico 2</span>&lt;/<span class="tag">li</span>&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="number">4</td>
+                        <td class="code tab">&lt;<span class="tag">li</span>&gt;<span class="text">Tópico 3</span>&lt;/<span class="tag">li</span>&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="number">5</td>
+                        <td class="code">&lt;/<span class="tag">ul</span>&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="number">6</td>
+                        <td class="code">&lt;<span class="tag">ol</span>&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="number">7</td>
+                        <td class="code tab">&lt;<span class="tag">li</span>&gt;<span class="text">Item</span>&lt;/<span class="tag">/li</span>&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="number">8</td>
+                        <td class="code tab">&lt;<span class="tag">li</span>&gt;<span class="text">Item</span>&lt;/<span class="tag">/li</span>&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="number">9</td>
+                        <td class="code tab">&lt;<span class="tag">li</span>&gt;<span class="text">Item</span>&lt;/<span class="tag">li</span>&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="number">10</td>
+                        <td class="code">&lt;/<span class="tag">ol</span>&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="number">11</td>
+                        <td class="coment">&lt;!--</td>
+                    </tr>
+                    <tr>
+                        <td class="number">12</td>
+                        <td class="coment">A tag &lt;ul&gt; lista itens formantando como tópicos</td>
+                    </tr>
+                    <tr>
+                        <td class="number">13</td>
+                        <td class="coment">A tag &lt;ul&gt; lista itens formantando em ordem numérica</td>
+                    </tr>
+                    <tr>
+                        <td class="number">14</td>
+                        <td class="coment">A tag &lt;li&gt; identifica um item que deve ser listado</td>
+                    </tr>
+                    <tr>
+                        <td class="number">15</td>
+                        <td class="coment">--&gt;</td>
+                    </tr>
+                </table>
+        </div>
+        <div class="exemplo">
+            <dl>
+                <dt>Lista por definição</dt>
+                <dd>O texto é representado com se fossem um título e subtítulo</dd>
+                <dd>Como um artigo com definição de palavras</dd>
+            </dl>
+            Exemplo:
+            <dl>
+                <dt>HTML</dt>
+                <dd>HTML significa Hypertext Markup Language.</dd>
+                <dd>O HTML não é uma linguagem de programação.</dd>
+            </dl>
+            
+            <div class="mt15px">Código:</div>
+            <table class="exemplo">
+                <tr>
+                    <td class="number">1</td>
+                    <td class="code">&lt;<span class="tag">dl</span>&gt;</td>
+                </tr>
+                <tr>
+                    <td class="number">2</td>
+                    <td class="code tab">&lt;<span class="tag">dt</span>&gt;<span class="text">Lista por definição</span>&lt;/<span class="tag">dt</span>&gt;</td>
+                </tr>
+                <tr>
+                    <td class="number">3</td>
+                    <td class="code tab">&lt;<span class="tag">dd</span>&gt;<span class="text">O texto é representado com se fossem um título e subtítulo.</span>&lt;/<span class="tag">dd</span>&gt;</td>
+                </tr>
+                <tr>
+                    <td class="number">4</td>
+                    <td class="code tab">&lt;<span class="tag">dd</span>&gt;<span class="text">Como um artigo com definição de palavras.</span>&lt;/<span class="tag">dd</span>&gt;</td>
+                </tr>
+                <tr>
+                    <td class="number">5</td>
+                    <td class="code">&lt;/<span class="tag">dl</span>&gt;</td>
+                </tr>
+                <tr>
+                    <td class="number">6</td>
+                    <td class="code text">Exemplo:</td>
+                </tr>
+                <tr>
+                    <td class="number">7</td>
+                    <td class="code">&lt;<span class="tag">dl</span>&gt;</td>
+                </tr>
+                <tr>
+                    <td class="number">8</td>
+                    <td class="code tab">&lt;<span class="tag">dt</span>&gt;<span class="text">HTML</span>&lt;/<span class="tag">dt</span>&gt;</td>
+                </tr>
+                <tr>
+                    <td class="number">9</td>
+                    <td class="code tab">&lt;<span class="tag">dd</span>&gt;<span class="text">HTML significa Hypertext Markup Language.</span>&lt;/<span class="tag">dd</span>&gt;</td>
+                </tr>
+                <tr>
+                    <td class="number">10</td>
+                    <td class="code tab">&lt;<span class="tag">dd</span>&gt;<span class="text">O HTML não é uma linguagem de programação.</span>&lt;/<span class="tag">dd</span>&gt;</td>
+                </tr>
+                <tr>
+                    <td class="number">11</td>
+                    <td class="code">&lt;/<span class="tag">dl</span>&gt;</td>
+                </tr>
+                <tr>
+                    <td class="number">12</td>
+                    <td class="coment">&lt;!--</td>
+                </tr>
+                <tr>
+                    <td class="number">13</td>
+                    <td class="coment">A tag &lt;dl&gt; indica que o conteúdo será uma lista por definição.</td>
+                </tr>
+                <tr>
+                    <td class="number">14</td>
+                    <td class="coment">A tag &lt;dt&gt; indica um termo.</td>
+                </tr>
+                <tr>
+                    <td class="number">15</td>
+                    <td class="coment">A tag &lt;dd&gt; idica uma definição.</td>
+                </tr>
+                <tr>
+                    <td class="number">16</td>
+                    <td class="coment">--&gt;</td>
+                </tr>
+            </table>
+        </div>
+        <footer>&copy;Arthur Lobo</footer>
+    </body>
+</html>

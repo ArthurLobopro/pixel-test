@@ -1,0 +1,32 @@
+body {
+    background-color:lightgrey;
+    color: black;
+}
+.table {
+    border: 2px solid blue;
+    background-color: white;
+}
+td.titulo, tr.subtitulo, th.titulo,td,th  {
+    border-color: black;
+}
+.tag{
+    color:blue;
+}
+.atribute{
+    color:red;
+}
+.value{
+    color:blue;
+}
+.coment{
+    color:green;
+}
+red {color:red;}
+green {color:green}
+a:hover{
+    color:red
+}
+a{
+    font-weight: bold;
+    color:blue;
+}

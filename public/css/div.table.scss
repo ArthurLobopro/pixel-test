@@ -1,0 +1,25 @@
+@import url(../fontes/css-import/NotoSansJP.css);
+.table {
+    border-radius: 5px;
+    margin: 10px auto;
+    max-width: 100%;
+    padding: 2px 4px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & h2{
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5px;
+        cursor: pointer;
+        user-select: none;
+        font-family: 'Noto Sans JP';
+        font-size: 18px;
+    }
+    @media screen and (max-width: 750px) {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+}

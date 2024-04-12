@@ -1,0 +1,21 @@
+header{
+    background-color:black;
+    color: lightgray;
+}
+.botao{
+    border-color: lightgray;
+    color: lightgray;
+}
+.botao:hover{
+    border-color: skyblue;
+    color:skyblue;
+}
+.theme-button{
+    background-color:#696969;
+}
+.circle{
+   background-color: darkslateblue;
+}
+header a li,header a li:visited,header a li:link {
+    color:black;
+}

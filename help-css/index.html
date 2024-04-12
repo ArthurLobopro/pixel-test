@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/theme-white.css" id="cores">
+    <!-- CSS secundários-->
+    <link rel="stylesheet" href="../public/css/cabecalho-medidas.css" type="text/css">
+    <link rel="stylesheet" href="../public/css/cabecalho-white.css" id="cabecalho">
+    <title>Ajuda CSS</title>
+    <script src="../public/js/main_index.js" type="module"></script>
+</head>
+<body>
+    <header>
+        
+        <div class="theme-button">
+            <div class="circle ad-2s">
+                <img src="../public/midia/moon-icon.svg" alt="" width="16px" height="16px">
+            </div>
+        </div>
+        <div>
+            <a href="../index.html">
+                <img src="../public/midia/home_white.png" alt="Home" title="Ir para página principal" width="30px" height="30px"         id="home">
+            </a>
+        </div>
+        
+        <div id="menu">
+            
+            <nav>
+                <ul>
+                    <li class="botao" data-target="bordas">Bordas</li>
+                    <li class="botao" data-target="texto">Texto</li>
+                    <li class="botao" data-target="listas">Listas</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Bordas -->
+    <div class="table">
+        <h2 id="bordas">
+            Propriedades para Bordas
+            <img src="../public/midia/seta-baixo.png" height="9px">
+        </h2>
+        <div id="border-selectors" class="invisible">
+            <dl class="grid">
+                <dt>border-width:</dt>
+                <dd>Define a expessura das bordas.</dd>
+                <dt>border-top-width:</dt>
+                <dd>Define a expessura da borda de cima.</dd>
+                <dt>border-left-width:</dt>
+                <dd>Define a expessura da borda direita.</dd>
+                <dt>border-bottom-width:</dt>
+                <dd>Define a expessura da borda de baixo.</dd>
+                <dt>border-right-width:</dt>
+                <dd>Define a expessura da borda esquerda.</dd>
+            </dl>
+            <br>
+
+            <dl class="grid">
+                <dt>border-color:</dt>
+                <dd>Define a cor das bordas.</dd>
+                <dt>border-top-color:</dt>
+                <dd>Define a cor da borda de cima.</dd>
+                <dt>border-left-color:</dt>
+                <dd>Define a cor da borda esquerda.</dd>
+                <dt>border-bottom-color:</dt>
+                <dd>Define a cor da borda de baixo.</dd>
+                <dt>border-right-color:</dt>
+                <dd>Define a cor da borda direita.</dd>
+            </dl>
+            <br>
+
+            <dl class="grid">
+                <dt>border-style:</dt>
+                <dd>Define o estilo das bordas.</dd>
+                <dt>border-top-style:</dt>
+                <dd>Define apenas o estilo da borda de cima.</dd>
+                <dt>border-left-style:</dt>
+                <dd>Define apenas o estilo da borda esquerda.</dd>
+                <dt>border-bottom-style:</dt>
+                <dd>Define apenas o estilo da borda de baixo.</dd>
+                <dt>border-right-style:</dt>
+                <dd>Define apenas o estilo da borda direita.</dd>
+            </dl>
+            <br>
+            <dl class="grid">
+                <dt>border:</dt>
+                <dd>Define <em>width, color e style</em> de todas as bordas.</d>
+                <dt>border-top:</dt>
+                <dd>Define <em>width, color e style</em> da borda de cima.</dd>
+                <dt>border-right:</dt>
+                <dd>Define <em>width, color e style</em> da borda direita.</dd>
+                <dt>border-bottom:</dt>
+                <dd>Define <em>width, color e style</em> da borda de baixo.</dd>
+                <dt>border-left:</dt>
+                <dd>Define <em>width, color e style</em> da borda esquerda.</dd>
+            </dl>
+            <br>
+            <dl class="grid">
+                <dt>border-radius:</dt>
+                <dd>Arredonda as bordas.</dd>
+                <dt>border-top-left-radius:</dt>
+                <dd>Arredonda apenas a borda superior esquerda.</dd>
+                <dt>border-top-right-radius:</dt>
+                <dd>Arredonda apenas a borda superior direita.</dd>
+                <dt>border-bottom-left-radius:</dt>
+                <dd>Arredonda apenas a borda inferior esquerda.</dd>
+                <dt>border-bottom-right-radius:</dt>
+                <dd>Arredonda apenas a borda inferior direita.</dd>
+            </dl>
+            <div class="full">Para exemplos <a href="exemplos-css/border-style.html">clique aqui</a></div>
+        </div>
+    </div>
+
+    <!-- Texto -->
+    <div class="table"> 
+        <h2 id="texto">
+            Propriedades para Texto
+            <img src="../public/midia/seta-baixo.png" height="9px">
+        </h2>
+        <div id="text-properties" class="invisible">
+            <dl class="grid">
+                <dt>text-align:</dt>
+                <dd>Define o alinhamento do texto.</dd>
+            </dl> <br>
+            <dl class="grid">
+                <dt>text-decoration-line:</dt>
+                <dd>Define o tipo linha decorativa.</dd>
+                <dt>text-decoration-color:</dt>
+                <dd>Define a cor da linha decorativa.</dd>
+                <dt>text-decoration-style:</dt>
+                <dd>Define o estilo da linha decorativa.</dd>
+                <dt>text-decoration:</dt>
+                <dd>Atalho para as propriedades acima.</dd>
+            </dl> <br>
+            <dl class="grid">
+                <dt>font-size:</dt>
+                <dd>Define o tamanho da fonte.</dd>
+                <dt>font-weight:</dt>
+                <dd>Define a tonalidade da fonte.</dd>
+                <dt>font-style:</dt>
+                <dd>Define o estilo da fonte(itálico por exemplo).</dd>
+                <dt>font-family:</dt>
+                <dd>Define a família da fonte.</dd>
+            </dl>
+        </div>
+    </div>
+    
+
+    <!-- Listas -->
+    <div class="table">
+        <h2 id="listas">
+            Propriedades para Listas
+            <img src="../public/midia/seta-baixo.png" height="9px">
+        </h2>
+        <div id="list-proprieties" class="invisible">
+            <dl class="grid">
+                <dt>list-style-type:</dt>
+                <dd>Define o estilo da lista.</dd>
+                <dt>list-style-image:</dt>
+                <dd>Define uma imagem para enumerar a lista</dd>
+                <dt>list-style-position:</dt>
+                <dd>Define a posição do estilo da lista</dd>
+            </dl>
+        </div>
+    </div>
+</body>
+</html>

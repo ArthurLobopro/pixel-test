@@ -1,0 +1,139 @@
+@import url(../fontes/css-import/Roboto-Slab.css);
+@import url(../fontes/css-import/Inconsolata.css);
+:root {
+  --preto: rgb(30, 30, 30);
+  --cinza:#787878;
+  --verde: #6A9955;
+  --verde-claro: #B5CEA8;
+  --branco: #e5e5e5;
+  --azul: #569CD6;
+  --azul-claro: #9CDCFE;
+  --laranja: #CE9178;
+  --amarelo: #DCDCAA;
+  --tab: 20px;
+  --number-width: 35px;
+}
+
+body {
+  background-color: lightgray;
+  font-family: "Times New Roman", serif;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: auto;
+}
+
+table.exemplo {
+  list-style: none;
+  width: 100%;
+  font-size: 17px;
+  background-color: var(--preto);
+  color: aliceblue;
+  font-family: Consolas, 'Inconsolata', monospace;
+  margin-top: 0;
+  padding-left: 5px;
+  border-collapse: collapse;
+}
+
+table.exemplo tr {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: var(--number-width) auto;
+      grid-template-columns: var(--number-width) auto;
+}
+
+div.exemplo {
+  padding: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: left;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px auto 10px;
+  background-color: white;
+}
+
+.mga {
+  margin: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.code {
+  color: var(--cinza);
+}
+
+.code, .tag, .comet, .text, .css-seletor {
+  font-family: Consolas, 'Inconsolata', monospace;
+}
+
+.mt15px {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.tag {
+  color: #2568ca;
+  color: var(--azul);
+}
+
+.text {
+  color: #e5e5e5;
+}
+
+td.text, td.code, td.atribute {
+  padding-left: 5px;
+}
+
+.atribute {
+  color: var(--azul-claro);
+}
+
+.atribute-text {
+  color: var(--laranja);
+}
+
+.coment {
+  color: var(--verde);
+  padding-left: 5px;
+}
+
+.css-seletor {
+  color: var(--amarelo);
+  padding-left: 5px;
+}
+
+.number {
+  text-align: right;
+  color: var(--cinza);
+  padding-right: 5px;
+  width: var(--number-width);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-right: 1pt solid var(--cinza);
+}
+
+.number-css {
+  color: var(--verde-claro);
+}
+
+.tab {
+  padding-left: var(--tab) !important;
+}
+
+footer {
+  margin-top: 15px;
+  text-align: center;
+  font-family: 'Roboto Slab';
+  font-weight: bold;
+  font-size: 18px;
+}
+/*# sourceMappingURL=main-exemplos.css.map */

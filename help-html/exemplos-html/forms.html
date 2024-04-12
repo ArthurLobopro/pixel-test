@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Formulários em HTML</title>
+		<link rel="stylesheet" href="../../public/css/main-exemplos.css">
+		<style>
+			input[type="text"]{
+				width: 100px;
+				margin-bottom: 5px;
+			}
+			div.exemplo{
+				width: 805px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Formulários</h1>
+		<div class="exemplo">
+			<form action="envia_form.html" class="mga" method="GET">
+				Nome: <input type="text" name="nome"> <br>
+				Sobrenome : <input type="text" name="sobrenome"> <br>
+				<input type="submit" value="Enviar">
+			</form>
+			<div class="mt15px">Código</div>
+			<table class="exemplo">
+				<tr>
+					<td class="number">1</td>
+					<td class="code">
+						&lt;<span class="tag">form</span>
+						<span class="atribute">action</span><span class="text">=</span><span class="atribute-text">"envia_form.html"</span>
+						<span class="atribute">method</span><span class="text">=</span><span class="atribute-text">"GET"</span>&gt;
+					</td>
+				</tr>
+				<tr>
+					<td class="number">2</td>
+					<td class="text tab">
+						Nome: <span class="code">&lt;</span><span class="tag">input</span>
+						<span class="atribute">type</span>=<span class="atribute-text">"text"</span>
+						<span class="atribute">name</span>=<span class="atribute-text">"nome"</span><span class="code">&gt;
+						&lt;<span class="tag">br</span>&gt;</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="number">3</td>
+					<td class="text tab">
+						Sobrenome: <span class="code">&lt;</span><span class="tag">input</span>
+						<span class="atribute">type</span>=<span class="atribute-text">"text"</span>
+						<span class="atribute">name</span>=<span class="atribute-text">"sobrenome"</span><span class="code">&gt;
+						&lt;<span class="tag">br</span>&gt;</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="number">4</td>
+					<td class="code tab">
+						&lt;<span class="tag">input</span>
+						<span class="atribute">type</span><span class="text">=</span><span class="atribute-text">"submit"</span>
+						<span class="atribute">value</span><span class="text">=</span><span class="atribute-text">"Enviar"</span>&gt;
+					</td>
+				</tr>
+				<tr>
+					<td class="number">5</td>
+					<td class="code">&lt;/<span class="tag">form</span>&gt;</td>
+				</tr>
+				<tr>
+					<td class="number">6</td>
+					<td class="coment">&lt;!--</td>
+				</tr>
+				<tr>
+					<td class="number">7</td>
+					<td class="coment">A tag <span class="tag">&lt;form&gt;</span> agrupa todos os campos de entrada de dados dentro dele para enviar </td>
+				</tr>
+				<tr>
+					<td class="number">8</td>
+					<td class="coment">O atributo action define uma ação de envio, normalmente um php.</td>
+				</tr>
+				<tr>
+					<td class="number">9</td>
+					<td class="coment">O atributo method define o método de envio dos dados.</td>
+				</tr>
+				<tr>
+					<td class="number">10</td>
+					<td class="coment">--&gt;</td>
+				</tr>
+				<tr>
+					<td class="number">11</td>
+					<td class="coment">&lt;!--</td>
+				</tr>
+				<tr>
+					<td class="number">12</td>
+					<td class="coment">Atenção! para dados sensíveis como senhas ou informações pessoais não é recomendado o metodo GET, pois essas informações são adicionadas na própria URL, deixando-as expostas.</td>
+				</tr>
+				<tr>
+					<td class="number">13</td>
+					<td class="coment">--&gt;</td>
+				</tr>
+			</table>
+		</div>
+		<footer>&copy;Arthur Lobo</footer>
+</body>
+</html>

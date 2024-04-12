@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, tags, desenvolvimento web, web design">
+    <meta name="description" content="Uma página que exemplifica de forma simples as funções de algumas tags HTML com alguns exemplos práticos">
+    <!-- CSS principal-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../public/css/cabecalho-medidas.css" type="text/css">    
+    <!-- CSS secundários-->
+    <link rel="stylesheet" href="css/theme-white.css" id="cores">
+    <link rel="stylesheet" href="../public/css/cabecalho-white.css" id="cabecalho">
+    <script src="../public/js/main_index.js" type="module"></script>
+    <title>Help HTML</title>
+</head>
+<body style="display: none;">
+
+    <!-- #region Cabeçalho -->
+    <header>
+        
+        <div class="theme-button">
+            <div class="circle ad-2s">
+                <img src="../public/midia/moon-icon.svg" alt="" width="16px" height="16px">
+            </div>
+        </div>
+        <div>
+            <a href="../index.html">
+                <img src="../public/midia/home_white.png" alt="Home" title="Ir para página principal" width="30px" height="30px"         id="home">
+            </a>
+        </div>
+
+        <div id="menu">
+            <nav>
+                <ul>
+                    <li data-target="format" class="botao">Formatação</li>
+                    <li data-target="espacamento" class="botao">Espaçamento</li>
+                    <li data-target="listas" class="botao ">Listas</li>
+                    <li data-target="midia-expand" class="botao">Mídia</li>
+                    <li data-target="table-expand" class="botao">Tabelas</li>
+                    <li data-target="forms-expand" class="botao">Formulários</li>
+                    <li data-target="titles-expand" class="botao">Títulos</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- #endregion -->
+
+    <!-- #region Geral -->
+    <div class="table"> 
+        <h2 id="geral-expand">
+            Geral
+            <img src="../public/midia/seta-baixo.png" height="9px">
+        </h2>
+        <div id="geral" class="invisible">
+            <table class="exemplo">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Fechamento</th>
+                        <th>Função</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tag">&lt;html&gt;</td>
+                        <td class="tag">&lt;/html&gt;</td>
+                        <td>Define a raiz do documento html</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;head&gt;</td>
+                        <td class="tag">&lt;/head&gt;</td>
+                        <td>Tag onde são postas as informações da página.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Dentre essas informações estão:</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;title&gt;</td>
+                        <td class="tag">&lt;/title&gt;</td>
+                        <td>Define o título da página (que é visto na guia)</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;link&gt;</td>
+                        <td class="nao-possui">Não possui</td>
+                        <td>Faz a ligação de algum arquivo na página (um arquivo css, um icone, entre outros).</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;meta&gt;</td>
+                        <td class="nao-possui">Não possui</td>
+                        <td>Define metadados da página como autor,descrição,codificação de caracteres,etc</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="mensagem">Observação: as definições devem ser feitas por meio de atributos</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;body&gt;</td>
+                        <td class="tag">&lt;/body&gt;</td>
+                        <td>É o "corpo" da página, aqui onde são colocados todos os elementos visíveis.</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;header&gt;</td>
+                        <td class="tag">&lt;/header&gt;</td>
+                        <td>Define o cabeçalho para a página.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;nav&gt;</td>
+                        <td class="tag">&lt;/nav&gt;</td>
+                        <td>Define uma sessão de navegação.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;main&gt;</td>
+                        <td class="tag">&lt;/main&gt;</td>
+                        <td>Define o conteúdo principal da página</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;section&gt;</td>
+                        <td class="tag">&lt;/section&gt;</td>
+                        <td>Cria uma seção na página</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;div&gt;</td>
+                        <td class="tag">&lt;/div&gt;</td>
+                        <td>Cria um contâiner em bloco, uma divisão.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;span&gt;</td>
+                        <td class="tag">&lt;/span&gt;</td>
+                        <td>Cria um contâiner inline, embutido.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;a&gt;</td>
+                        <td class="tag">&lt;/a&gt;</td>
+                        <td>Adiciona um hiperlink, para exemplos <a href="exemplos-html/tag-a.html">clique aqui</a></td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;address&gt;</td>
+                        <td class="tag">&lt;/address&gt;</td>
+                        <td>Define um endereço ou forma de contato do autor de um artigo ou página html.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;footer&gt;</td>
+                        <td class="tag">&lt;/footer&gt;</td>
+                        <td>Define o rodapé da página</td>
+                    </tr>
+                    <tr>
+                        <td class="coment">&lt;!--</td>
+                        <td class="coment">--&gt;</td>
+                        <td>Adiciona um comentário (só pode ser visualizado no código fonte)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- #endregion -->
+    
+    <!-- #region Formatação -->
+    <div class="table">
+        <h2 id="format">
+            Formatação de texto
+            <img src="../public/midia/seta-baixo.png" height="9px">
+        </h2>
+        <div id="texto" class="invisible">
+            <table class="exemplo">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Fechamento</th>
+                        <th>Função</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tag">&lt;i&gt;</td>
+                        <td class="tag">&lt;/i&gt;</td>
+                        <td>Deixa o texto em itálico (forma)</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;em&gt;</td>
+                        <td class="tag"> &lt;/em&gt;</td>
+                        <td>Deixa o texto enfatizado (itálico, porém semântico)</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;b&gt;</td>
+                        <td class="tag">&lt;/b&gt;</td>
+                        <td>Deixa o texto em negrito (forma)</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;strong&gt;</td>
+                        <td class="tag">&lt;/strong&gt;</td>
+                        <td>Deixa o texto em destaque (negrito, porém semântico)</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;mark&gt;</td>
+                        <td class="tag">&lt;/mark&gt;</td>
+                        <td>Deixa o texto em destaque (marcado,semelhante a canetinhas marca texto).</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;small&gt;</td>
+                        <td class="tag">&lt;/small&gt;</td>
+                        <td>Deixa o texto pequeno</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;del&gt;</td>
+                        <td class="tag">&lt;/del&gt;</td>
+                        <td>Indica um texto deletado.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;ins&gt;</td>
+                        <td class="tag">&lt;/ins&gt;</td>
+                        <td>Indica um texto inserido.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;u&gt;</td>
+                        <td class="tag">&lt;/u&gt;</td>
+                        <td>Sublinha o texto.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;sup&gt;</td>
+                        <td class="tag">&lt;/sup&gt;</td>
+                        <td>Indica um texto sobrescrito</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;sub&gt;</td>
+                        <td class="tag">&lt;/sub&gt;</td>
+                        <td>Indica um texto subscrito</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;code&gt;</td>
+                        <td class="tag">&lt;/code&gt;</td>
+                        <td>Indica um trecho de código inline.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;pre&gt;</td>
+                        <td class="tag">&lt;/pre&gt;</td>
+                        <td>Indica um texto pré formatado (mantém todos os espaços e quebras de linha).</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;abrr&gt;</td>
+                        <td class="tag">&lt;/abrr&gt;</td>
+                        <td>Indica uma abreviatura (com definição).</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">A definição deve ser definida pelo atributo <spam class="atribute">title="<spam class="value">definição</spam>"</spam>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;marquee&gt;</td>
+                        <td class="tag">&lt;/marquee&gt;</td>
+                        <td>Faz o texto (ou imagem) rodar na página</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Para ver os exemplos relacionados a texto <a href="exemplos-html/formatacao-de-texto.html">clique aqui</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- #endregion -->
+    
+    <!-- #region Espaçamento -->
+    <div class="table">   
+        <h2 id="espacamento">
+            Espaçamento
+            <img src="../public/midia/seta-baixo.png" height="9px">
+        </h2>
+        <div id="spacing" class="invisible">
+            <table class="exemplo">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Fechamento</th>
+                        <th>Função</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tag">&lt;p&gt;</td>
+                        <td class="tag">&lt;/p&gt;</td>
+                        <td>Define um parágrafo</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;br&gt;</td>
+                        <td class="nao-possui">Não possui</td>
+                        <td>Indica uma quebra de linha (enter).</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;hr&gt;</td>
+                        <td class="nao-possui">Não possui</td>
+                        <td>Cria uma linha horizontal que divide todo o elemento em que está presente</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Para exemplos de espaçamento <a href="exemplos-html/espacamento.html">clique aqui</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region Listas -->
+    <div class="table">
+        <h2 id="listas">
+            Listas
+            <img src="../public/midia/seta-baixo.png" height="9px">
+        </h2>
+        <div class="invisible" id="lists">
+            <table class="exemplo">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Fechamento</th>
+                        <th>Função</th>
+                    </tr>
+                </thead>
+                <tbody id="listas">
+                    <tr>
+                        <td class="tag">&lt;ul&gt;</td>
+                        <td class="tag">&lt;/ul&gt;</td>
+                        <td>Indica uma lista não enumerada.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;ol&gt;</td>
+                        <td class="tag">&lt;/ol&gt;</td>
+                        <td>Indica uma lista enumerada</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;li&gt;</td>
+                        <td class="tag">&lt;/li&gt;</td>
+                        <td>Indica um item em uma lista.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;dl&gt;</td>
+                        <td class="tag">&lt;/dl&gt;</td>
+                        <td>Define uma lista por definição.</td>   
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;dt&gt;</td>
+                        <td class="tag">&lt;/dt&gt;</td>
+                        <td>Define um termo.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;dd&gt;</td>
+                        <td class="tag">&lt;/dd&gt;</td>
+                        <td>Define uma definição para um termo.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Para vez exemplos das tags de listagem <a href="exemplos-html/listas.html">clique aqui</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region Mídia -->
+    <div class="table">
+        <h2 id="midia-expand">
+            Midia
+            <img src="../public/midia/seta-baixo.png" height="9px">
+        </h2>
+        <div class="invisible" id="midia">
+            <table class="exemplo">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Fechamento</th>
+                        <th>Função</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tag">&lt;img&gt;</td>
+                        <td class="tag">&lt;/img&gt;</td>
+                        <td>Adiciona uma imagem,Para exemplos <a href="exemplos-html/imagem.html">clique aqui</a></td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;audio&gt;</td>
+                        <td class="tag">&lt;/audio&gt;</td>
+                        <td>Adiciona um audio na página</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;video&gt;</td>
+                        <td class="tag">&lt;/video&gt;</td>
+                        <td>Adiciona um video na página</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="mensagem">
+                            <red>Atenção!!!</red> O caminho para a midia deve ser especificado no atributo <span class="atribute">src="<span class="value">nome do arquivo da imagem</span>"</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region Tabelas -->
+    <div class="table">
+        <h2 id="table-expand">
+            Tabelas
+            <img src="../public/midia/seta-baixo.png" height="9px">
+        </h2>
+        <div class="invisible" id="table">
+            <table class="exemplo">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Fechamento</th>
+                        <th>Função</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tag">&lt;table&gt;</td>
+                        <td class="tag">&lt;/table&gt;</td>
+                        <td>Cria uma tabela.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;caption&gt;</td>
+                        <td class="tag">&lt;/caption&gt;</td>
+                        <td>Define um título para a tabela, deve ser usado dentro da tag <span class="tag">&lt;table&gt;</span>.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;thead&gt;</td>
+                        <td class="tag">&lt;/thead&gt;</td>
+                        <td>Indica um cabeçalho para a tabela.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;tbody&gt;</td>
+                        <td class="tag">&lt;/tbody&gt;</td>
+                        <td>Indica o corpo da tabela.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;tr&gt;</td>
+                        <td class="tag">&lt;/tr&gt;</td>
+                        <td>Indica uma linha na tabela.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;th&gt;</td>
+                        <td class="tag">&lt;/th&gt;</td>
+                        <td>Indica uma coluna de cabeçalho para a tabela.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;td&gt;</td>
+                        <td class="tag">&lt;/td&gt;</td>
+                        <td>Indica uma coluna para a tabela.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region Formulários -->
+    <div class="table">
+        <h2 id="forms-expand">
+            Formulários
+            <img src="../public/midia/seta-baixo.png" height="9px">
+        </h2>
+        <div class="invisible" id="forms">
+            <table class="exemplo">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Fechamento</th>
+                        <th>Função</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tag">&lt;form&gt;</td>
+                        <td class="tag">&lt;/form&gt;</td>
+                        <td>Cria um formulário,em outras palavras,ele agrupa todas as tags seguintes que recebem dados</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;input&gt;</td>
+                        <td class="nao-possui">Não possui</td>
+                        <td> Recebe algum determinado tipo de dado, para exemplos <a href="exemplos-html/tag-input.html">clique aqui</a></td><tr>
+                        <td colspan="3" class="mensagem">
+                        <red>Atenção!!!</red> O tipo de dado a ser coletado deve ser especificado pelo atributo <span class="atribute">type="<span class="value">tipo de dado</span>"</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;select&gt;</td>
+                        <td class="tag">&lt;/select&gt;</td>
+                        <td>Cria um quadro de seleção</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Para adicionar as opções use a tag abaixo</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;option&gt;</td>
+                        <td class="tag">&lt;/option&gt;</td>
+                        <td>Indica uma opção para algum campo input.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;fieldset&gt;</td>
+                        <td class="tag">&lt;/fieldset&gt;</td>
+                        <td>Cria um elemento para agrupar alguns inputs, pode ser usado para organizar o formulário.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;legend&gt;</td>
+                        <td class="tag">&lt;/legend&gt;</td>
+                        <td>Indica um título para um <span class="tag">&lt;fieldset&gt;</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;textarea&gt;</td>
+                        <td class="tag">&lt;/textarea&gt;</td>
+                        <td>Cria uma área que recolhe texto.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"> Para exemplos <a href="exemplos-html/forms.html">clique aqui</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region Títulos -->
+    <div class="table">
+        <h2 id="titles-expand">
+            Títulos
+            <img src="../public/midia/seta-baixo.png" height="9px">
+        </h2>
+        <div class="invisible" id="titles">
+            <table class="exemplo">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Fechamento</th>
+                        <th>Função</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tag">&lt;h1&gt;</td>
+                        <td class="tag">&lt;/h1&gt;</td>
+                        <td>Indica um título de nível 1</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;h2&gt;</td>
+                        <td class="tag">&lt;/h2&gt;</td>
+                        <td>Indica um título de nível 2</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;h3&gt;</td>
+                        <td class="tag">&lt;/h3&gt;</td>
+                        <td>Indica um título de nível 3</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;h4&gt;</td>
+                        <td class="tag">&lt;/h4&gt;</td>
+                        <td>Indica um título de nível 4</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;h5&gt;</td>
+                        <td class="tag">&lt;/h5&gt;</td>
+                        <td>Indica um título de nível 5</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;h6&gt;</td>
+                        <td class="tag">&lt;/h6&gt;</td>
+                        <td>Indica um título de nível 6</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Os títulos seguem uma ordem hierárquica onde o nível 1 é o mais importante e o nível 6 o menos importante.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            Para exemplos de títulos <a href="exemplos-html/titulos.html">clique aqui.</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- #endregion -->
+</body>
+</html>

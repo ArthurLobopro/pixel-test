@@ -1,0 +1,26 @@
+body{
+    background-color: white;
+}
+blockquote{
+    border-color:rgba(0, 122, 204, 0.5);
+	background: rgba(127, 127, 127, 0.1);
+}
+td a {
+    color: #4080D0;
+}
+pre{
+    background-color: black;
+    color: #e5e5e5;
+}
+code{
+    background-color:#484848;
+}
+.tag{
+    color: blue;
+}
+.orange{
+    color: #C9AE75;
+}
+.string{
+    color: #CE9178;
+}

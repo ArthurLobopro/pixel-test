@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Tag a</title>
+    <link rel="stylesheet" href="../../public/css/main-exemplos.css">   
+    <link rel="stylesheet" href="css/links.css">
+    <script src="js/links.js" type="module"></script>
+    </head>
+    <body>
+        <h1 id="1">Tag <span class="tag">&lt;a&gt;</span></h1><br>
+        <div class="exemplo">
+            
+                <a href="../index.html">Tabela HTML</a><br>
+                Uma ligação comum.
+            <div class="mt15px">Código:</div>
+            <table class="exemplo">
+                <tr>
+                    <td class="number">1</td>
+                    <td class="code">
+                        &lt;<span class="tag">a</span>
+                        <span class="atribute">href</span><span class="text">=</span><span class="atribute-text">"../index.html"</span>&gt;<span class="text">Tabela HTML</span>&lt;/<span class="tag">a</span>&gt;&lt;<span class="tag">br</span>&gt;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="number">2</td>
+                    <td class="text"> Uma ligação comum.</td>
+                </tr>
+                <tr>
+                    <td class="number">3</td>
+                    <td class="coment">&lt;!-- A tag &lt;a&gt; cria uma ligação com outro documento por meio de um hyperlink --&gt;</td>
+                </tr>
+                <tr>
+                    <td class="number">4</td>
+                    <td class="coment">&lt;!-- O atributo href="" indica o caminho até o documento --&gt;</td>
+                </tr>
+            </table>
+        </div>
+        <div class="exemplo">
+            <a href="../../public/midia/imagem1.jpg" download>
+                <img src="../../public/midia/imagem1.jpg">
+            </a><br>
+            Clique na imagem para fazer download da mesma.
+            <div class="mt15px">Código:</div>
+            <table class="exemplo">
+                <tr>
+                    <td class="number">1</td>
+                    <td class="code">
+                        &lt;<span class="tag">a</span> 
+                        <span class="atribute">href</span><span class="text">=</span><span class="atribute-text">"../public/midia/imagem1.jpg"</span><span class="atribute"> download</span>&gt;&lt;/<span class="tag">a</span>&gt;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="number">2</td>
+                    <td class="code tab">
+                        &lt;<span class="text"><span class="tag">img</span> 
+                        <span class="atribute">src</span>=<span class="atribute-text">"../public/midia/imagem1.jpg"</span></span>&gt;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="number">3</td>
+                    <td class="code">&lt;/<span class="tag">a</span>&gt;&lt;<span class="tag">br</span>&gt;</td>
+                </tr>
+                <tr>
+                    <td class="number">4</td>
+                    <td class="text">Clique na imagem para fazer download da mesma.</td>
+                </tr>
+                <tr>
+                    <td class="number">5</td>
+                    <td class="coment">&lt;!-- O atributo download faz com que o arquivo ligado seja baixado --&gt;</td>
+                </tr>
+            </table>
+        </div>
+        <div class="exemplo">
+            <a href="#fim">Clique para ir para o fim da página</a>
+            <div class="mt15px">Código:</div>
+            <table class="exemplo">
+                <tr>
+                    <td class="number">1</td>
+                    <td class="code">
+                        &lt;<span class="tag">a</span> 
+                        <span class="atribute">href</span><span class="text">=</span><span class="atribute-text">"#fim"</span>&gt;<span class="text">Clique para ir para o fim da página</span>&lt;/<span class="tag">a</span>&gt;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="number">2</td>
+                    <td class="coment">&lt;!-- Com o uso de IDS também pode fazer ligações no mesmo documento. --&gt;</td>
+                </tr>
+            </table>
+        </div>
+        <h2>Target para a tag <span class="tag">&lt;a&gt;</span></h2>
+        <div class="exemplo">
+            <a href="../index.html" id="link-target" target="_self">Tabela HTML</a><br>
+            <span id="msg-target">
+                Este link será aberto na mesma guia.
+            </span>
+            <div class="mt15px">Código:</div>
+            <table class="exemplo">
+                <tr>
+                    <td class="number">1</td>
+                    <td class="code">
+                        &lt;<span class="tag">a</span> 
+                        <span class="atribute">href</span><span class="text">=</span><span class="atribute-text">"../index.html"</span> <span class="atribute">target</span><span class="text">=</span><span class="atribute-text" id="target">_self</span>&gt;<span class="text">Tabela HTML</span>&lt;/<span class="tag">a</span>&gt;
+                    </td>
+                </tr>
+            </table><br>
+            <div class="left">
+                Exemplos:<br>
+                <div id="exemplo-target" class="grid">
+                    <label><input type="radio" name="target" data-target="_self" checked>_self</label>
+                    <label><input type="radio" name="target" data-target="_blank">_blank</label>
+                </div><br>
+                _self abre o link na mesma guia (padrão). <br>
+                _black abre o link em nova guia.
+            </div>
+        </div><br>
+        <h2>Estilo do link</h2>
+        <div class="exemplo">
+            <a href="../index.html" id="link-color">Tabela HTML</a><br>
+            <div class="mt15px">Código:</div>
+            <div class="mt15px">HTML</div>
+            <table class="exemplo">
+                <tr>
+                    <td class="number">1</td>
+                    <td class="code">
+                        &lt;<span class="tag">a</span> 
+                        <span class="atribute">href</span><span class="text">=</span><span class="atribute-text">"../index.html"</span><span class="atribute"> id</span><span class="text">=</span><span class="atribute-text">"link-color"</span>&gt;<span class="text">Tabela HTML</span>&lt;/<span class="tag">a</span>&gt;
+                    </td>
+                </tr>
+            </table>
+            <div class="mt15px">CSS</div>
+            <table class="exemplo">
+                <tr>
+                    <td class="number">1</td>
+                    <td class="css-seletor">#link-color<span class="text">{</span></td>
+                </tr>
+                <tr>
+                    <td class="number">2</td>
+                    <td class="tab text"><span class="atribute">color</span>: <span class="atribute-text" id="color">blue</span>;</td>
+                </tr>
+                <tr>
+                    <td class="number">3</td>
+                    <td class="tab text"><span class="atribute">background-color</span>: <span class="atribute-text" id="bg-color">white</span>;</td>
+                </tr>
+                <tr>
+                    <td class="number">4</td>
+                    <td class="tab text"><span class="atribute">text-decoration-line</span>: <span class="atribute-text" id="txt-decor-line">underline</span>;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="number">5</td>
+                    <td class="tab text"><span class="atribute">text-decoration-style</span>: <span class="atribute-text" id="txt-decor-st">solid</span>;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="number">6</td>
+                    <td class="text">}</td>
+                </tr>
+            </table><br>
+            <div class="left">
+                Exemplos:<br>
+                <div id="exemplo-style" class="grid">
+                    <div>
+                        <p>Cor:</p>
+                        <label><input type="radio" name="color" value="blue" checked>Azul</label><br>
+                        <label><input type="radio" name="color" value="red">Vermelho</label><br>
+                        <label><input type="radio" name="color" value="green">Verde</label><br>
+                        <label><input type="radio" name="color" value="violet">Violeta</label><br>
+                        <label><input type="radio" name="color" value="purple">Roxo</label><br>
+                        <span class="rob-slab">*Há várias outras cores*</span>
+                    </div>
+                    <div>
+                        <p>Cor de Fundo:</p>
+                        <label><input type="radio" name="bgcolor" value="white" checked>Branco</label><br>
+                        <label><input type="radio" name="bgcolor" value="black">Preto</label><br>
+                        <label><input type="radio" name="bgcolor" value="gray">Cinza</label><br>
+                        <label><input type="radio" name="bgcolor" value="purple">Roxo</label><br>
+                        <label><input type="radio" name="bgcolor" value="lightblue">Azul Claro</label><br>
+                        <span class="rob-slab">*Há várias outras cores*</span>
+                    </div>
+                    <div>
+                        <p>text-decoration-line:</p>
+                        <input type="radio" name="tdec" value="underline" checked>underline<br>
+                        <input type="radio" name="tdec" value="overline">overline<br>
+                        <input type="radio" name="tdec" value="line-through">line-through<br>
+                        <input type="radio" name="tdec" value="underline overline">underline overline<br>
+                        <input type="radio" name="tdec" value="underline overline line-through">underline overline line-through<br>
+                        <input type="radio" name="tdec" value="none">none
+                    </div>
+                    <div>
+                        <p>text-decoration-style:</p>
+                        <input type="radio" name="tdecstl" value="solid" checked>solid<br>
+                        <input type="radio" name="tdecstl" value="dashed">dashed<br>
+                        <input type="radio" name="tdecstl" value="dotted">dotted<br>
+                        <input type="radio" name="tdecstl" value="double">double<br>
+                        <input type="radio" name="tdecstl" value="wavy">wavy<br>
+                        <input type="radio" name="tdecstl" value="initial">initial
+                    </div>
+                </div><br>
+            </div>
+        </div>
+        <footer id="fim">
+            <a href="#1">Clique para retornar ao começo da página</a><br>
+            &copy;Arthur Lobo
+        </footer>
+    </body>
+</html>

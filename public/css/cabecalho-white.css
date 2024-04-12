@@ -1,0 +1,21 @@
+header{
+    background-color:rgb(35, 40, 45);
+}
+.botao{
+    border-color: aliceblue;
+}
+.botao:hover{
+    border-color: skyblue;
+    color:skyblue;
+}
+header a li, header a li:visited, header a li:link,header{
+    color: aliceblue;
+}
+/* Botão animado*/
+.theme-button{
+    background-color:#696969;
+}
+.circle{
+    background-color: black;
+}
+/*Fim botão animado*/

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Style</title>
+    <link rel="stylesheet" href="../../public/css/main-exemplos.css">
+    <link rel="stylesheet" href="css/border-style.css">
+</head>
+<body>
+    <section class="grid">
+        <datalist id="style-values">
+            <option value="initial">initial</option>
+            <option value="dashed">dashed</option>
+            <option value="dotted">dotted</option>
+            <option value="double">double</option>
+            <option value="groove">groove</option>
+            <option value="hidden">hidden</option>
+            <option value="inset">inset</option>
+            <option value="none">none</option>
+            <option value="outset">outset</option>
+            <option value="ridge">ridge</option>
+            <option value="solid" selected>solid</option>
+        </datalist>
+        <ul>
+            <li class="separado">
+                <div>
+                    border-style:
+                    <input type="text" id="border-style" data-name="Style" list="style-values" value="solid">
+                </div>
+                <img src="../../public/midia/seta-baixo.png" data-target="style-selectors" height="9px">
+            </li>
+            <ul id="style-selectors" style="display: none;">
+                <li>
+                    border-top-style: <input type="text" id="border-top-style" name="Style" data-lado="Top" list="style-values" value="solid">
+                </li>
+                <li>
+                    border-right-style: <input type="text" id="border-right-style" name="Style" data-lado="Right" list="style-values" value="solid">
+                </li>
+                <li>
+                    border-bottom-style: <input type="text" id="border-bottom-style" name="Style" data-lado="Bottom" list="style-values" value="solid">
+                </li>
+                <li>
+                    border-left-style: <input type="text" id="border-left-style" name="Style" data-lado="Left" list="style-values" value="solid">
+                </li>
+            </ul>
+
+            <li class="separado">
+                <div>border-color: <input type="text" id="border-color" data-name="Color" value="black"></div>
+                <img src="../../public/midia/seta-baixo.png" data-target="color-selectors" height="9px">
+            </li>
+            <ul id="color-selectors" style="display: none;">
+                <li>
+                    border-top-color: <input type="text" data-lado="Top" name="Color" id="border-top-color" value="black">
+                </li>
+                <li>
+                    border-right-color: <input type="text" data-lado="Right" name="Color" id="border-right-color" value="black">
+                </li>
+                <li>
+                    border-bottom-color: <input type="text" data-lado="Bottom" name="Color" id="border-bottom-color" value="black">
+                </li>
+                <li>
+                    border-left-color: <input type="text" data-lado="Left" name="Color" id="border-left-color" value="black">
+                </li>
+            </ul>
+            <li class="separado">
+                <div>border-width: <input type="text" id="border-width" data-name="Width" value="5px"></div>
+                <img src="../../public/midia/seta-baixo.png" data-target="width-selectors" height="9px">
+            </li>
+            <ul id="width-selectors" style="display: none;">
+                <li>
+                    border-width: <input type="text" data-lado="Top" name="Width" id="border-top-width" value="5px">
+                </li>
+                <li>
+                    border-right-width: <input type="text" data-lado="Right" name="Width" id="border-right-width" value="5px">
+                </li>
+                <li>
+                    border-bottom-width: <input type="text" data-lado="Bottom" name="Width" id="border-bottom-width" value="5px">
+                </li>
+                <li>
+                    border-left-width: <input type="text" data-lado="Left" name="Width" id="border-left-width" value="5px">
+                </li>
+            </ul>
+            <li class="separado">
+                <div>border-radius: <input type="text" id="border-radius" data-name="Radius" value="0px"></div>
+                <img src="../../public/midia/seta-baixo.png" data-target="radius-selectors" height="9px">
+            </li>
+            <ul id="radius-selectors" style="display: none;">
+                <li>
+                    border-top-left-radius: <input type="text" data-lado="Top" name="Radius" id="border-top-radius" value="0px">
+                </li>
+                <li>
+                    border-top-right-radius: <input type="text" data-lado="Right" name="Radius" id="border-right-radius" value="0px">
+                </li>
+                <li>
+                    border-bottom-left-radius: <input type="text" data-lado="Bottom" name="Radius" id="border-bottom-radius" value="0px">
+                </li>
+                <li>
+                    border-bottom-right-radius: <input type="text" data-lado="Left" name="Radius" id="border-left-radius" value="0px">
+                </li>
+            </ul>
+        </ul>
+        
+        <div id="div-cobaia">
+            Div comum
+        </div>
+        
+        <div class="table">
+            <h2>Estilo CSS: <img src="../../public/midia/copy.svg" height="20px" alt=""></h2>
+            <table class="exemplo">
+                <tr>
+                    <td class="number">1</td>
+                    <td class="css-seletor">div<span class="text">{</span></td>
+                </tr>
+                <tr>
+                    <td class="number">2</td>
+                    <td class="text tab">   <span class="atribute">border-style</span>: <span id="style" class="atribute-text">solid</span>;</td>
+                </tr>
+                <tr>
+                    <td class="number">3</td>
+                    <td class="text tab">   <span class="atribute">border-color</span>: <span class="atribute-text" id="color">black</span>;</td>
+                </tr>
+                <tr>
+                    <td class="number">4</td>
+                    <td class="text tab">   <span class="atribute">border-width</span>: <span class="atribute-text" id="width">5px</span>;</td>
+                </tr>
+                <tr>
+                    <td class="number">5</td>
+                    <td class="text tab">   <span class="atribute">border-radius</span>: <span class="atribute-text" id="radius">0px</span>;</td>
+                </tr>
+                <tr>
+                    <td class="number">6</td>
+                    <td class="text">}</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <script src="js/border-style.js" type="module"></script>
+</body>
+</html>
