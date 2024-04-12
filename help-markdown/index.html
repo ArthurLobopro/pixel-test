@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,30 @@
     <!--Tema-->
     <link rel="stylesheet" href="css/html-table-white.css" id="theme">
     <script src="../public/js/main_index.js" type="module"></script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            }
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'
+            n.queue = []; t = b.createElement(e); t.async = !0
+            t.src = v; s = b.getElementsByTagName(e)[0]
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js')
+        fbq('init', '960148358850688')
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=960148358850688&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
+
 <body>
     <header>
-        
+
         <div class="theme-button" style="visibility: hidden;">
             <div class="circle ad-2s">
                 <img src="../public/midia/moon-icon.svg" alt="" width="16px" height="16px">
@@ -22,24 +43,25 @@
         </div>
         <div>
             <a href="../index.html">
-                <img src="../public/midia/home_white.png" alt="Home" title="Ir para página principal" width="30px" height="30px" id="home">
+                <img src="../public/midia/home_white.png" alt="Home" title="Ir para página principal" width="30px"
+                    height="30px" id="home">
             </a>
         </div>
 
         <div id="menu">
-                <nav>
-                    <ul>
-                        <li data-target="formt" class="botao">Formatação</li>
-                        <li data-target="list" class="botao ">Listas</li>
-                        <li data-target="table" class="botao">Tabelas</li>
-                        <li data-target="title" class="botao">Títulos</li>
-                        <li data-target="link" class="botao">Links</li>
-                        <li data-target="code" class="botao">Código</li>
-                        <li data-target="quote" class="botao">Citação</li>
-                        <li data-target="image" class="botao">Imagem</li>
-                        <li data-target="hr" class="botao">Linhas</li>
-                    </ul>
-                </nav>
+            <nav>
+                <ul>
+                    <li data-target="formt" class="botao">Formatação</li>
+                    <li data-target="list" class="botao ">Listas</li>
+                    <li data-target="table" class="botao">Tabelas</li>
+                    <li data-target="title" class="botao">Títulos</li>
+                    <li data-target="link" class="botao">Links</li>
+                    <li data-target="code" class="botao">Código</li>
+                    <li data-target="quote" class="botao">Citação</li>
+                    <li data-target="image" class="botao">Imagem</li>
+                    <li data-target="hr" class="botao">Linhas</li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -108,11 +130,11 @@
                     <tr>
                         <td>0. Item</td>
                         <td>Ao colocar algum numero seguido de um . e um espaço, ele se torna uma lista enumerada</td>
-                    </tr> 
+                    </tr>
                 </table>
                 <table>
                     <tr>
-                        <td  class="ta-left">
+                        <td class="ta-left">
                             Resultado: <br>
                             <ul>
                                 <li>Item</li>
@@ -136,7 +158,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">*Para adicionar uma sublista basta dar tres espaços antes de adicionar a lista*</td>
+                        <td colspan="2">*Para adicionar uma sublista basta dar tres espaços antes de adicionar a lista*
+                        </td>
                     </tr>
                 </table>
             </div>
@@ -157,9 +180,12 @@
                     <tbody>
                         <tr>
                             <td class="ta-left pl5px">
-                                Para fazer tabelas em markdown basta fazer a primeira linha delimitando as colunas com |. <br>
-                                Depois é só replicar a divisão com --- | --- para indicar que a linha anterior é o cabeçalho. <br>
-                                Após isso é só continuar adicionando linhas e delimitando as colunas com | obedecendo a formatação original <br>
+                                Para fazer tabelas em markdown basta fazer a primeira linha delimitando as colunas com
+                                |. <br>
+                                Depois é só replicar a divisão com --- | --- para indicar que a linha anterior é o
+                                cabeçalho. <br>
+                                Após isso é só continuar adicionando linhas e delimitando as colunas com | obedecendo a
+                                formatação original <br>
                             </td>
                         </tr>
                     </tbody>
@@ -209,7 +235,8 @@
                     <tbody>
                         <tr>
                             <td class="ta-left pl5px" colspan="2">
-                                Para fazer o alinhamento nas tabelas basta adicionar : na posição que o texto deve ficar na linha da formatação da tabela
+                                Para fazer o alinhamento nas tabelas basta adicionar : na posição que o texto deve ficar
+                                na linha da formatação da tabela
                             </td>
                         </tr>
                         <tr>
@@ -352,13 +379,15 @@
                             <td colspan="2">Colocar o texto entre ` indica um código inline</span></td>
                         </tr>
                         <tr>
-                            <td colspan="3" class="one-line">Resultado: <code class="orange">print('Olá Mundo!')</code></td>
+                            <td colspan="3" class="one-line">Resultado: <code class="orange">print('Olá Mundo!')</code>
+                            </td>
                         </tr>
                         <tr>
                             <td>```Código```</td>
-                            <td colspan="2">Ao por um código entre ``` além dos efeitos de ` ele ainda obedece a identação.</td>
+                            <td colspan="2">Ao por um código entre ``` além dos efeitos de ` ele ainda obedece a
+                                identação.</td>
                         </tr>
-                        
+
                     </tbody>
                 </table>
                 <table>
@@ -375,7 +404,7 @@
                         </td>
                         <td class="ta-left">
                             Resultado:
-<pre>
+                            <pre>
 num = int(input(<span class="string">'Digite um número'</span>))
 if num%2==0:
     print(<span class="string">'{} é par.'</span>.format(num))
@@ -408,7 +437,7 @@ else:
                         <td colspan="2" class="ta-left">
                             Resultado: <br>
                             <div class="bgc-black">
-                                <blockquote >
+                                <blockquote>
                                     &quot;O Inferno está vazio e todos os demônios estão aqui.&quot; <br>
                                     William Shakespeare.
                                 </blockquote>
@@ -441,7 +470,7 @@ else:
                         </td>
                     </tr>
                 </table>
-           </div>
+            </div>
         </div>
         <!-- Linhas horizontais -->
         <div class="table">
@@ -461,7 +490,8 @@ else:
                     </tr>
                     <tr>
                         <td colspan="3">
-                            Resultado: <hr>
+                            Resultado:
+                            <hr>
                         </td>
                     </tr>
                 </table>
@@ -469,4 +499,5 @@ else:
         </div>
     </main>
 </body>
+
 </html>

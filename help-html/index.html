@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, tags, desenvolvimento web, web design">
-    <meta name="description" content="Uma página que exemplifica de forma simples as funções de algumas tags HTML com alguns exemplos práticos">
+    <meta name="description"
+        content="Uma página que exemplifica de forma simples as funções de algumas tags HTML com alguns exemplos práticos">
     <!-- CSS principal-->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="../public/css/cabecalho-medidas.css" type="text/css">    
+    <link rel="stylesheet" href="../public/css/cabecalho-medidas.css" type="text/css">
     <!-- CSS secundários-->
     <link rel="stylesheet" href="css/theme-white.css" id="cores">
     <link rel="stylesheet" href="../public/css/cabecalho-white.css" id="cabecalho">
     <script src="../public/js/main_index.js" type="module"></script>
     <title>Help HTML</title>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            }
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'
+            n.queue = []; t = b.createElement(e); t.async = !0
+            t.src = v; s = b.getElementsByTagName(e)[0]
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js')
+        fbq('init', '960148358850688')
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=960148358850688&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
+
 <body style="display: none;">
 
     <!-- #region Cabeçalho -->
     <header>
-        
+
         <div class="theme-button">
             <div class="circle ad-2s">
                 <img src="../public/midia/moon-icon.svg" alt="" width="16px" height="16px">
@@ -27,7 +49,8 @@
         </div>
         <div>
             <a href="../index.html">
-                <img src="../public/midia/home_white.png" alt="Home" title="Ir para página principal" width="30px" height="30px"         id="home">
+                <img src="../public/midia/home_white.png" alt="Home" title="Ir para página principal" width="30px"
+                    height="30px" id="home">
             </a>
         </div>
 
@@ -48,7 +71,7 @@
     <!-- #endregion -->
 
     <!-- #region Geral -->
-    <div class="table"> 
+    <div class="table">
         <h2 id="geral-expand">
             Geral
             <img src="../public/midia/seta-baixo.png" height="9px">
@@ -92,7 +115,8 @@
                         <td>Define metadados da página como autor,descrição,codificação de caracteres,etc</td>
                     </tr>
                     <tr>
-                        <td colspan="3" class="mensagem">Observação: as definições devem ser feitas por meio de atributos</td>
+                        <td colspan="3" class="mensagem">Observação: as definições devem ser feitas por meio de
+                            atributos</td>
                     </tr>
                     <tr>
                         <td class="tag">&lt;body&gt;</td>
@@ -154,7 +178,7 @@
         </div>
     </div>
     <!-- #endregion -->
-    
+
     <!-- #region Formatação -->
     <div class="table">
         <h2 id="format">
@@ -242,7 +266,8 @@
                         <td>Indica uma abreviatura (com definição).</td>
                     </tr>
                     <tr>
-                        <td colspan="3">A definição deve ser definida pelo atributo <spam class="atribute">title="<spam class="value">definição</spam>"</spam>
+                        <td colspan="3">A definição deve ser definida pelo atributo <spam class="atribute">title="<spam
+                                    class="value">definição</spam>"</spam>
                         </td>
                     </tr>
                     <tr>
@@ -251,16 +276,17 @@
                         <td>Faz o texto (ou imagem) rodar na página</td>
                     </tr>
                     <tr>
-                        <td colspan="3">Para ver os exemplos relacionados a texto <a href="exemplos-html/formatacao-de-texto.html">clique aqui</a></td>
+                        <td colspan="3">Para ver os exemplos relacionados a texto <a
+                                href="exemplos-html/formatacao-de-texto.html">clique aqui</a></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
     <!-- #endregion -->
-    
+
     <!-- #region Espaçamento -->
-    <div class="table">   
+    <div class="table">
         <h2 id="espacamento">
             Espaçamento
             <img src="../public/midia/seta-baixo.png" height="9px">
@@ -291,7 +317,8 @@
                         <td>Cria uma linha horizontal que divide todo o elemento em que está presente</td>
                     </tr>
                     <tr>
-                        <td colspan="3">Para exemplos de espaçamento <a href="exemplos-html/espacamento.html">clique aqui</a></td>
+                        <td colspan="3">Para exemplos de espaçamento <a href="exemplos-html/espacamento.html">clique
+                                aqui</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -333,7 +360,7 @@
                     <tr>
                         <td class="tag">&lt;dl&gt;</td>
                         <td class="tag">&lt;/dl&gt;</td>
-                        <td>Define uma lista por definição.</td>   
+                        <td>Define uma lista por definição.</td>
                     </tr>
                     <tr>
                         <td class="tag">&lt;dt&gt;</td>
@@ -346,7 +373,8 @@
                         <td>Define uma definição para um termo.</td>
                     </tr>
                     <tr>
-                        <td colspan="3">Para vez exemplos das tags de listagem <a href="exemplos-html/listas.html">clique aqui</a></td>
+                        <td colspan="3">Para vez exemplos das tags de listagem <a
+                                href="exemplos-html/listas.html">clique aqui</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -387,7 +415,8 @@
                     </tr>
                     <tr>
                         <td colspan="3" class="mensagem">
-                            <red>Atenção!!!</red> O caminho para a midia deve ser especificado no atributo <span class="atribute">src="<span class="value">nome do arquivo da imagem</span>"</span>
+                            <red>Atenção!!!</red> O caminho para a midia deve ser especificado no atributo <span
+                                class="atribute">src="<span class="value">nome do arquivo da imagem</span>"</span>
                         </td>
                     </tr>
                 </tbody>
@@ -420,7 +449,8 @@
                     <tr>
                         <td class="tag">&lt;caption&gt;</td>
                         <td class="tag">&lt;/caption&gt;</td>
-                        <td>Define um título para a tabela, deve ser usado dentro da tag <span class="tag">&lt;table&gt;</span>.</td>
+                        <td>Define um título para a tabela, deve ser usado dentro da tag <span
+                                class="tag">&lt;table&gt;</span>.</td>
                     </tr>
                     <tr>
                         <td class="tag">&lt;thead&gt;</td>
@@ -472,14 +502,18 @@
                     <tr>
                         <td class="tag">&lt;form&gt;</td>
                         <td class="tag">&lt;/form&gt;</td>
-                        <td>Cria um formulário,em outras palavras,ele agrupa todas as tags seguintes que recebem dados</td>
+                        <td>Cria um formulário,em outras palavras,ele agrupa todas as tags seguintes que recebem dados
+                        </td>
                     </tr>
                     <tr>
                         <td class="tag">&lt;input&gt;</td>
                         <td class="nao-possui">Não possui</td>
-                        <td> Recebe algum determinado tipo de dado, para exemplos <a href="exemplos-html/tag-input.html">clique aqui</a></td><tr>
+                        <td> Recebe algum determinado tipo de dado, para exemplos <a
+                                href="exemplos-html/tag-input.html">clique aqui</a></td>
+                    <tr>
                         <td colspan="3" class="mensagem">
-                        <red>Atenção!!!</red> O tipo de dado a ser coletado deve ser especificado pelo atributo <span class="atribute">type="<span class="value">tipo de dado</span>"</span>
+                            <red>Atenção!!!</red> O tipo de dado a ser coletado deve ser especificado pelo atributo
+                            <span class="atribute">type="<span class="value">tipo de dado</span>"</span>
                         </td>
                     </tr>
                     <tr>
@@ -498,7 +532,8 @@
                     <tr>
                         <td class="tag">&lt;fieldset&gt;</td>
                         <td class="tag">&lt;/fieldset&gt;</td>
-                        <td>Cria um elemento para agrupar alguns inputs, pode ser usado para organizar o formulário.</td>
+                        <td>Cria um elemento para agrupar alguns inputs, pode ser usado para organizar o formulário.
+                        </td>
                     </tr>
                     <tr>
                         <td class="tag">&lt;legend&gt;</td>
@@ -566,7 +601,8 @@
                         <td>Indica um título de nível 6</td>
                     </tr>
                     <tr>
-                        <td colspan="3">Os títulos seguem uma ordem hierárquica onde o nível 1 é o mais importante e o nível 6 o menos importante.</td>
+                        <td colspan="3">Os títulos seguem uma ordem hierárquica onde o nível 1 é o mais importante e o
+                            nível 6 o menos importante.</td>
                     </tr>
                     <tr>
                         <td colspan="3">
@@ -579,4 +615,5 @@
     </div>
     <!-- #endregion -->
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,10 +12,30 @@
     <link rel="stylesheet" href="../public/css/cabecalho-white.css" id="cabecalho">
     <title>Ajuda CSS</title>
     <script src="../public/js/main_index.js" type="module"></script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            }
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'
+            n.queue = []; t = b.createElement(e); t.async = !0
+            t.src = v; s = b.getElementsByTagName(e)[0]
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js')
+        fbq('init', '960148358850688')
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=960148358850688&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
+
 <body>
     <header>
-        
+
         <div class="theme-button">
             <div class="circle ad-2s">
                 <img src="../public/midia/moon-icon.svg" alt="" width="16px" height="16px">
@@ -22,12 +43,13 @@
         </div>
         <div>
             <a href="../index.html">
-                <img src="../public/midia/home_white.png" alt="Home" title="Ir para página principal" width="30px" height="30px"         id="home">
+                <img src="../public/midia/home_white.png" alt="Home" title="Ir para página principal" width="30px"
+                    height="30px" id="home">
             </a>
         </div>
-        
+
         <div id="menu">
-            
+
             <nav>
                 <ul>
                     <li class="botao" data-target="bordas">Bordas</li>
@@ -37,7 +59,7 @@
             </nav>
         </div>
     </header>
-    
+
     <!-- Bordas -->
     <div class="table">
         <h2 id="bordas">
@@ -116,7 +138,7 @@
     </div>
 
     <!-- Texto -->
-    <div class="table"> 
+    <div class="table">
         <h2 id="texto">
             Propriedades para Texto
             <img src="../public/midia/seta-baixo.png" height="9px">
@@ -148,7 +170,7 @@
             </dl>
         </div>
     </div>
-    
+
 
     <!-- Listas -->
     <div class="table">
@@ -168,4 +190,5 @@
         </div>
     </div>
 </body>
+
 </html>
